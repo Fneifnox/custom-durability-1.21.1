@@ -1,0 +1,35 @@
+package net.fneifnox.customdurability.mixin.other;
+
+import net.fneifnox.customdurability.CustomDurability;
+import net.minecraft.item.FishingRodItem;
+import net.minecraft.item.ItemStack;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+@Mixin(ItemStack.class)
+public abstract class FishingRodItemMixin {
+
+    @Inject(method = "getMaxDamage", at = @At("RETURN"), cancellable = true)
+    private void modifyMaxDamage(CallbackInfoReturnable<Integer> cir) {
+        ItemStack stack = (ItemStack) (Object) this;
+
+        if (stack.getItem() instanceof FishingRodItem) {
+            if (CustomDurability.CONFIG.unbreakableFishingRod()) {
+                cir.setReturnValue(1);
+            } else {
+                cir.setReturnValue(CustomDurability.CONFIG.durabilityForFishingRod());
+            }
+        }
+    }
+
+    @Inject(method = "isDamageable", at = @At("RETURN"), cancellable = true)
+    private void modifyIsDamageable(CallbackInfoReturnable<Boolean> cir) {
+        ItemStack stack = (ItemStack) (Object) this;
+
+        if (stack.getItem() instanceof FishingRodItem && CustomDurability.CONFIG.unbreakableFishingRod()) {
+            cir.setReturnValue(false);
+        }
+    }
+}
