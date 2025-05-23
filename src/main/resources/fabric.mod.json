@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "custom-durability",
+	"version": "${version}",
+	"name": "Custom Durability",
+	"description": "This mod let's you configure the durability of vanilla items. You can even make them unbreakable.",
+	"authors": [
+		"Fneifnox"
+	],
+	"contact": {
+		"homepage": "https://discord.gg/bszSDCq5ms",
+		"sources": "https://modrinth.com/mod/costum-durability"
+	},
+	"license": "Custom-Durability",
+	"icon": "assets/custom-durability/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fneifnox.customdurability.CustomDurability"
+		],
+		"fabric-datagen": [
+			"net.fneifnox.customdurability.CustomDurabilityDataGenerator"
+		]
+	},
+	"mixins": [
+		"custom-durability.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": ">=1.21 <1.21.2",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

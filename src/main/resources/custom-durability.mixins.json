@@ -1,0 +1,24 @@
+{
+	"required": true,
+	"package": "net.fneifnox.customdurability.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"tools.ToolMaterialsMixin",
+		"tools.ItemStackMixin",
+		"other.TridentItemMixin",
+		"other.MaceItemMixin",
+		"other.BowItemMixin",
+		"other.CrossbowItemMixin",
+		"other.ShieldItemMixin",
+		"other.FishingRodItemMixin",
+		"other.FlintAndSteelItemMixin",
+		"other.ShearsItemMixin",
+		"other.BrushItemMixin",
+		"armor.ElytraItemMixin",
+		"armor.ElytraItemFixMixin",
+		"armor.AnimalArmorItemMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
