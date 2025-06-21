@@ -1,12 +1,13 @@
-package net.fneifnox.customdurability.mixin.other;
+package net.fneifnox.customdurability.mixin.tools.other;
 
-import net.fneifnox.customdurability.CustomDurability;
 import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+import static net.fneifnox.customdurability.CustomDurability.CONFIG;
 
 @Mixin(ItemStack.class)
 public abstract class CrossbowItemMixin {
@@ -16,10 +17,11 @@ public abstract class CrossbowItemMixin {
         ItemStack stack = (ItemStack) (Object) this;
 
         if (stack.getItem() instanceof CrossbowItem) {
-            if (CustomDurability.CONFIG.unbreakableCrossbow()) {
+            if (CONFIG.unbreakableTools.unbreakableToolsOther.unbreakableCrossbow() ||
+                    CONFIG.unbreakableTools.unbreakableAllTools()) {
                 cir.setReturnValue(1);
             } else {
-                cir.setReturnValue(CustomDurability.CONFIG.durabilityForCrossbow());
+                cir.setReturnValue(CONFIG.durabilityForCrossbow());
             }
         }
     }
@@ -28,7 +30,8 @@ public abstract class CrossbowItemMixin {
     private void modifyIsDamageable(CallbackInfoReturnable<Boolean> cir) {
         ItemStack stack = (ItemStack) (Object) this;
 
-        if (stack.getItem() instanceof CrossbowItem && CustomDurability.CONFIG.unbreakableCrossbow()) {
+        if (stack.getItem() instanceof CrossbowItem && CONFIG.unbreakableTools.unbreakableToolsOther.unbreakableCrossbow() ||
+                stack.getItem() instanceof CrossbowItem && CONFIG.unbreakableTools.unbreakableAllTools()) {
             cir.setReturnValue(false);
         }
     }

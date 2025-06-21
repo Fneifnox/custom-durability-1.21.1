@@ -1,10 +1,13 @@
 package net.fneifnox.customdurability.Config;
-import blue.endless.jankson.Comment;
-import io.wispforest.owo.config.annotation.Config;
-import io.wispforest.owo.config.annotation.Modmenu;
-import io.wispforest.owo.config.annotation.RestartRequired;
-import io.wispforest.owo.config.annotation.SectionHeader;
 
+import blue.endless.jankson.Comment;
+import io.wispforest.owo.config.Option;
+import io.wispforest.owo.config.annotation.*;
+
+import java.util.List;
+import java.util.Map;
+
+@Sync(Option.SyncMode.OVERRIDE_CLIENT)
 @Modmenu(modId = "custom-durability")
 @Config(name = "custom-durability", wrapperName = "CustomD")
 public class ConfigModel {
@@ -62,23 +65,150 @@ public class ConfigModel {
     public int durabilityForAnimalArmor = 64; // Default 64
 
     @SectionHeader("Unbreakable")
-    public boolean unbreakableWoodenTools = false;
-    public boolean unbreakableStoneTools = false;
-    public boolean unbreakableIronTools = false;
-    public boolean unbreakableGoldenTools = false;
-    public boolean unbreakableDiamondTools = false;
-    public boolean unbreakableNetheriteTools = false;
-    @Comment("Buggy - If enabled doesn't let you throw the trident")
-    public boolean unbreakableTrident = false; // buggy
-    public boolean unbreakableMace = false;
-    public boolean unbreakableBow = false;
-    public boolean unbreakableCrossbow = false;
-    public boolean unbreakableShield = false;
-    public boolean unbreakableFishingRod = false;
-    public boolean unbreakableFlintAndSteel = false;
-    public boolean unbreakableShears = false;
-    public boolean unbreakableBrush = false;
-    public boolean unbreakableElytra = false; // buggy
-    @Comment("If enabled let's your wolf become invincible")
-    public boolean unbreakableAnimalArmor = false;
+    @Nest
+    public UnbreakableTools unbreakableTools = new UnbreakableTools();
+    public static class UnbreakableTools {
+        public boolean unbreakableAllTools = false;
+        @Nest
+        public UnbreakableTools.UnbreakableToolsWooden unbreakableToolsWooden = new UnbreakableTools.UnbreakableToolsWooden();
+        public static class UnbreakableToolsWooden {
+            public boolean unbreakableWoodenSword = false;
+            public boolean unbreakableWoodenShovel = false;
+            public boolean unbreakableWoodenPickaxe = false;
+            public boolean unbreakableWoodenAxe = false;
+            public boolean unbreakableWoodenHoe = false;
+        }
+
+        @Nest
+        public UnbreakableTools.UnbreakableToolsStone unbreakableToolsStone = new UnbreakableTools.UnbreakableToolsStone();
+        public static class UnbreakableToolsStone {
+            public boolean unbreakableStoneSword = false;
+            public boolean unbreakableStoneShovel = false;
+            public boolean unbreakableStonePickaxe = false;
+            public boolean unbreakableStoneAxe = false;
+            public boolean unbreakableStoneHoe = false;
+        }
+
+        @Nest
+        public UnbreakableTools.UnbreakableToolsIron unbreakableToolsIron = new UnbreakableTools.UnbreakableToolsIron();
+        public static class UnbreakableToolsIron {
+            public boolean unbreakableIronSword = false;
+            public boolean unbreakableIronShovel = false;
+            public boolean unbreakableIronPickaxe = false;
+            public boolean unbreakableIronAxe = false;
+            public boolean unbreakableIronHoe = false;
+        }
+
+        @Nest
+        public UnbreakableTools.UnbreakableToolsGolden unbreakableToolsGolden = new UnbreakableTools.UnbreakableToolsGolden();
+        public static class UnbreakableToolsGolden {
+            public boolean unbreakableGoldenSword = false;
+            public boolean unbreakableGoldenShovel = false;
+            public boolean unbreakableGoldenPickaxe = false;
+            public boolean unbreakableGoldenAxe = false;
+            public boolean unbreakableGoldenHoe = false;
+        }
+
+        @Nest
+        public UnbreakableTools.UnbreakableToolsDiamond unbreakableToolsDiamond = new UnbreakableTools.UnbreakableToolsDiamond();
+        public static class UnbreakableToolsDiamond {
+            public boolean unbreakableDiamondSword = false;
+            public boolean unbreakableDiamondShovel = false;
+            public boolean unbreakableDiamondPickaxe = false;
+            public boolean unbreakableDiamondAxe = false;
+            public boolean unbreakableDiamondHoe = false;
+        }
+
+        @Nest
+        public UnbreakableTools.UnbreakableToolsNetherite unbreakableToolsNetherite = new UnbreakableTools.UnbreakableToolsNetherite();
+        public static class UnbreakableToolsNetherite {
+            public boolean unbreakableNetheriteSword = false;
+            public boolean unbreakableNetheriteShovel = false;
+            public boolean unbreakableNetheritePickaxe = false;
+            public boolean unbreakableNetheriteAxe = false;
+            public boolean unbreakableNetheriteHoe = false;
+        }
+
+        @Nest
+        public UnbreakableTools.UnbreakableToolsOther unbreakableToolsOther = new UnbreakableTools.UnbreakableToolsOther();
+        public static class UnbreakableToolsOther {
+            public boolean unbreakableTrident = false; // buggy
+            public boolean unbreakableMace = false;
+            public boolean unbreakableBow = false;
+            public boolean unbreakableCrossbow = false;
+            public boolean unbreakableShield = false;
+            public boolean unbreakableFishingRod = false;
+            public boolean unbreakableFlintAndSteel = false;
+            public boolean unbreakableShears = false;
+            public boolean unbreakableBrush = false;
+        }
+    }
+
+    @Nest
+    public UnbreakableArmor unbreakableArmor = new UnbreakableArmor();
+    public static class UnbreakableArmor {
+        public boolean unbreakableAllArmor = false;
+        @Nest
+        public UnbreakableArmor.UnbreakableArmorLeather unbreakableArmorLeather = new UnbreakableArmor.UnbreakableArmorLeather();
+        public static class UnbreakableArmorLeather {
+            public boolean unbreakableLeatherHelmet = false;
+            public boolean unbreakableLeatherChestplate = false;
+            public boolean unbreakableLeatherLeggings = false;
+            public boolean unbreakableLeatherBoots = false;
+        }
+
+        @Nest
+        public UnbreakableArmor.UnbreakableArmorChainmail unbreakableArmorChainmail = new UnbreakableArmor.UnbreakableArmorChainmail();
+        public static class UnbreakableArmorChainmail {
+            public boolean unbreakableChainmailHelmet = false;
+            public boolean unbreakableChainmailChestplate = false;
+            public boolean unbreakableChainmailLeggings = false;
+            public boolean unbreakableChainmailBoots = false;
+        }
+
+        @Nest
+        public UnbreakableArmor.UnbreakableArmorIron unbreakableArmorIron = new UnbreakableArmor.UnbreakableArmorIron();
+        public static class UnbreakableArmorIron {
+            public boolean unbreakableIronHelmet = false;
+            public boolean unbreakableIronChestplate = false;
+            public boolean unbreakableIronLeggings = false;
+            public boolean unbreakableIronBoots = false;
+        }
+
+        @Nest
+        public UnbreakableArmor.UnbreakableArmorGolden unbreakableArmorGolden = new UnbreakableArmor.UnbreakableArmorGolden();
+        public static class UnbreakableArmorGolden {
+            public boolean unbreakableGoldenHelmet = false;
+            public boolean unbreakableGoldenChestplate = false;
+            public boolean unbreakableGoldenLeggings = false;
+            public boolean unbreakableGoldenBoots = false;
+        }
+
+        @Nest
+        public UnbreakableArmor.UnbreakableArmorDiamond unbreakableArmorDiamond = new UnbreakableArmor.UnbreakableArmorDiamond();
+        public static class UnbreakableArmorDiamond {
+            public boolean unbreakableDiamondHelmet = false;
+            public boolean unbreakableDiamondChestplate = false;
+            public boolean unbreakableDiamondLeggings = false;
+            public boolean unbreakableDiamondBoots = false;
+        }
+
+        @Nest
+        public UnbreakableArmor.UnbreakableArmorNetherite unbreakableArmorNetherite = new UnbreakableArmor.UnbreakableArmorNetherite();
+        public static class UnbreakableArmorNetherite {
+            public boolean unbreakableNetheriteHelmet = false;
+            public boolean unbreakableNetheriteChestplate = false;
+            public boolean unbreakableNetheriteLeggings = false;
+            public boolean unbreakableNetheriteBoots = false;
+        }
+
+        @Nest
+        public UnbreakableArmor.UnbreakableArmorOther unbreakableArmorOther = new UnbreakableArmor.UnbreakableArmorOther();
+        public static class UnbreakableArmorOther {
+            public boolean unbreakableTurtleHelmet = false;
+            public boolean unbreakableElytra = false;
+            @Comment("If enabled let's your wolf become invincible")
+            public boolean unbreakableAnimalArmor = false;
+        }
+    }
 }
