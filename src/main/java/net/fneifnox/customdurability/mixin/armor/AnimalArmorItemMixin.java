@@ -1,13 +1,13 @@
 package net.fneifnox.customdurability.mixin.armor;
 
-import net.fneifnox.customdurability.CustomDurability;
 import net.minecraft.item.AnimalArmorItem;
-import net.minecraft.item.ElytraItem;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+import static net.fneifnox.customdurability.CustomDurability.CONFIG;
 
 @Mixin(ItemStack.class)
 public abstract class AnimalArmorItemMixin {
@@ -17,10 +17,11 @@ public abstract class AnimalArmorItemMixin {
         ItemStack stack = (ItemStack) (Object) this;
 
         if (stack.getItem() instanceof AnimalArmorItem) {
-            if (CustomDurability.CONFIG.unbreakableAnimalArmor()) {
+            if (CONFIG.unbreakableArmor.unbreakableArmorOther.unbreakableAnimalArmor() ||
+                    CONFIG.unbreakableArmor.unbreakableAllArmor()) {
                 cir.setReturnValue(1);
             } else {
-                cir.setReturnValue(CustomDurability.CONFIG.durabilityForAnimalArmor());
+                cir.setReturnValue(CONFIG.durabilityForAnimalArmor());
             }
         }
     }
@@ -29,7 +30,8 @@ public abstract class AnimalArmorItemMixin {
     private void modifyIsDamageable(CallbackInfoReturnable<Boolean> cir) {
         ItemStack stack = (ItemStack) (Object) this;
 
-        if (stack.getItem() instanceof AnimalArmorItem && CustomDurability.CONFIG.unbreakableAnimalArmor()) {
+        if (stack.getItem() instanceof AnimalArmorItem && CONFIG.unbreakableArmor.unbreakableArmorOther.unbreakableAnimalArmor() ||
+                stack.getItem() instanceof AnimalArmorItem && CONFIG.unbreakableArmor.unbreakableAllArmor()) {
             cir.setReturnValue(false);
         }
     }

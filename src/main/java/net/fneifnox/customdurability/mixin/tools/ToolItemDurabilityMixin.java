@@ -1,33 +1,34 @@
 package net.fneifnox.customdurability.mixin.tools;
 
-import net.fneifnox.customdurability.CustomDurability;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.ToolMaterials;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
+import static net.fneifnox.customdurability.CustomDurability.CONFIG;
+
 @Mixin(ToolMaterials.class)
-public abstract class ToolMaterialsMixin implements ToolMaterial {
+public abstract class ToolItemDurabilityMixin implements ToolMaterial {
 
     @Overwrite
     public int getDurability() {
         if ((Object) this == ToolMaterials.WOOD) {
-            return CustomDurability.CONFIG.durabilityForWoodenTools();
+            return CONFIG.durabilityForWoodenTools();
         }
         if ((Object) this == ToolMaterials.STONE) {
-            return CustomDurability.CONFIG.durabilityForStoneTools();
+            return CONFIG.durabilityForStoneTools();
         }
         if ((Object) this == ToolMaterials.IRON) {
-            return CustomDurability.CONFIG.durabilityForIronTools();
+            return CONFIG.durabilityForIronTools();
         }
         if ((Object) this == ToolMaterials.DIAMOND) {
-            return CustomDurability.CONFIG.durabilityForDiamondTools();
+            return CONFIG.durabilityForDiamondTools();
         }
         if ((Object) this == ToolMaterials.GOLD) {
-            return CustomDurability.CONFIG.durabilityForGoldenTools();
+            return CONFIG.durabilityForGoldenTools();
         }
         if ((Object) this == ToolMaterials.NETHERITE) {
-            return CustomDurability.CONFIG.durabilityForNetheriteTools();
+            return CONFIG.durabilityForNetheriteTools();
         }
 
         // Default-Fallback: Vanilla-Wert behalten
