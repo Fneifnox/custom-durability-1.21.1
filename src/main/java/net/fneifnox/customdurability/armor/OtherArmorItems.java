@@ -1,0 +1,53 @@
+package net.fneifnox.customdurability.armor;
+
+import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
+import net.minecraft.component.type.UnbreakableComponent;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.util.Identifier;
+
+import static net.fneifnox.customdurability.CustomDurability.CONFIG;
+import static net.minecraft.component.DataComponentTypes.MAX_DAMAGE;
+import static net.minecraft.component.DataComponentTypes.UNBREAKABLE;
+
+public class OtherArmorItems {
+
+    public static void setDurabilityAndUnbreakableTurtleHelmet() {
+        DefaultItemComponentEvents.MODIFY.register(context -> {
+            Item turtleHelmet = Registries.ITEM.get(Identifier.of("minecraft", "turtle_helmet"));
+
+            if (!CONFIG.ArmorOther.unbreakableTurtleHelmet()) {
+                context.modify(turtleHelmet, components -> components.add(MAX_DAMAGE, CONFIG.ArmorOther.durabilityForTurtleHelmet()));
+            }
+            else {
+                context.modify(turtleHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorOther.unbreakableTurtleHelmet())));
+            }
+        });
+    }
+
+    public static void setDurabilityAndUnbreakableElytra() {
+        DefaultItemComponentEvents.MODIFY.register(context -> {
+            Item elytra = Registries.ITEM.get(Identifier.of("minecraft", "elytra"));
+
+            if (!CONFIG.ArmorOther.unbreakableElytra()) {
+                context.modify(elytra, components -> components.add(MAX_DAMAGE, CONFIG.ArmorOther.durabilityForElytra()));
+            }
+            else {
+                context.modify(elytra, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorOther.unbreakableElytra())));
+            }
+        });
+    }
+
+    public static void setDurabilityAndUnbreakableAnimalArmor() {
+        DefaultItemComponentEvents.MODIFY.register(context -> {
+            Item animalArmor = Registries.ITEM.get(Identifier.of("minecraft", "wolf_armor"));
+
+            if (!CONFIG.ArmorOther.unbreakableAnimalArmor()) {
+                context.modify(animalArmor, components -> components.add(MAX_DAMAGE, CONFIG.ArmorOther.durabilityForAnimalArmor()));
+            }
+            else {
+                context.modify(animalArmor, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorOther.unbreakableAnimalArmor())));
+            }
+        });
+    }
+}

@@ -3,7 +3,7 @@
 	"id": "custom-durability",
 	"version": "${version}",
 	"name": "Custom Durability",
-	"description": "This mod let's you configure the durability of vanilla items. You can even make them unbreakable.",
+	"description": "This mod let's you configure the durability of vanilla and modded items. You can even make them unbreakable.",
 	"authors": [
 		"Fneifnox"
 	],
@@ -27,7 +27,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
-		"minecraft": ">=1.21 <1.21.2",
+		"minecraft": "*",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
