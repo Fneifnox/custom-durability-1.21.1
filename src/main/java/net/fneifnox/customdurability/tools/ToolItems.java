@@ -204,31 +204,36 @@ public class ToolItems {
 
             if (!CONFIG.ToolsDiamond.unbreakableDiamondSword()) {
                 context.modify(diamondSword, components -> components.add(MAX_DAMAGE, CONFIG.ToolsDiamond.durabilityForDiamondSword()));
-            } else {
+            }
+            else {
                 context.modify(diamondSword, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsDiamond.unbreakableDiamondSword())));
             }
 
             if (!CONFIG.ToolsDiamond.unbreakableDiamondShovel()) {
                 context.modify(diamondShovel, components -> components.add(MAX_DAMAGE, CONFIG.ToolsDiamond.durabilityForDiamondShovel()));
-            } else {
+            }
+            else {
                 context.modify(diamondShovel, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsDiamond.unbreakableDiamondShovel())));
             }
 
             if (!CONFIG.ToolsDiamond.unbreakableDiamondPickaxe()) {
                 context.modify(diamondPickaxe, components -> components.add(MAX_DAMAGE, CONFIG.ToolsDiamond.durabilityForDiamondPickaxe()));
-            } else {
+            }
+            else {
                 context.modify(diamondPickaxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsDiamond.unbreakableDiamondPickaxe())));
             }
 
             if (!CONFIG.ToolsDiamond.unbreakableDiamondAxe()) {
                 context.modify(diamondAxe, components -> components.add(MAX_DAMAGE, CONFIG.ToolsDiamond.durabilityForDiamondAxe()));
-            } else {
+            }
+            else {
                 context.modify(diamondAxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsDiamond.unbreakableDiamondAxe())));
             }
 
             if (!CONFIG.ToolsDiamond.unbreakableDiamondHoe()) {
                 context.modify(diamondHoe, components -> components.add(MAX_DAMAGE, CONFIG.ToolsDiamond.durabilityForDiamondHoe()));
-            } else {
+            }
+            else {
                 context.modify(diamondHoe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsDiamond.unbreakableDiamondHoe())));
             }
         });
@@ -244,31 +249,36 @@ public class ToolItems {
 
             if (!CONFIG.ToolsNetherite.unbreakableNetheriteSword()) {
                 context.modify(netheriteSword, components -> components.add(MAX_DAMAGE, CONFIG.ToolsNetherite.durabilityForNetheriteSword()));
-            } else {
+            }
+            else {
                 context.modify(netheriteSword, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsNetherite.unbreakableNetheriteSword())));
             }
 
             if (!CONFIG.ToolsNetherite.unbreakableNetheriteShovel()) {
                 context.modify(netheriteShovel, components -> components.add(MAX_DAMAGE, CONFIG.ToolsNetherite.durabilityForNetheriteShovel()));
-            } else {
+            }
+            else {
                 context.modify(netheriteShovel, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsNetherite.unbreakableNetheriteShovel())));
             }
 
             if (!CONFIG.ToolsNetherite.unbreakableNetheritePickaxe()) {
                 context.modify(netheritePickaxe, components -> components.add(MAX_DAMAGE, CONFIG.ToolsNetherite.durabilityForNetheritePickaxe()));
-            } else {
+            }
+            else {
                 context.modify(netheritePickaxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsNetherite.unbreakableNetheritePickaxe())));
             }
 
             if (!CONFIG.ToolsNetherite.unbreakableNetheriteAxe()) {
                 context.modify(netheriteAxe, components -> components.add(MAX_DAMAGE, CONFIG.ToolsNetherite.durabilityForNetheriteAxe()));
-            } else {
+            }
+            else {
                 context.modify(netheriteAxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsNetherite.unbreakableNetheriteAxe())));
             }
 
             if (!CONFIG.ToolsNetherite.unbreakableNetheriteHoe()) {
                 context.modify(netheriteHoe, components -> components.add(MAX_DAMAGE, CONFIG.ToolsNetherite.durabilityForNetheriteHoe()));
-            } else {
+            }
+            else {
                 context.modify(netheriteHoe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsNetherite.unbreakableNetheriteHoe())));
             }
         });
