@@ -248,24 +248,171 @@
 
   "text.config.custom-durability.option.ArmorOther.durabilityForTurtleHelmet": "Turtle Shell",
   "text.config.custom-durability.option.ArmorOther.durabilityForElytra": "Elytra",
-  "text.config.custom-durability.option.ArmorOther.durabilityForAnimalArmor": "Wolf Armor",
+  "text.config.custom-durability.option.ArmorOther.durabilityForWolfArmor": "Wolf Armor",
 
   "text.config.custom-durability.section.ArmorOther Unbreakable": "Unbreakable",
 
   "text.config.custom-durability.option.ArmorOther.unbreakableTurtleHelmet": "Turtle Shell",
   "text.config.custom-durability.option.ArmorOther.unbreakableElytra": "Elytra",
-  "text.config.custom-durability.option.ArmorOther.unbreakableAnimalArmor": "Wolf Armor (Invincible Wolf)",
+  "text.config.custom-durability.option.ArmorOther.unbreakableWolfArmor": "Wolf Armor (Invincible Wolf)",
 
 
 
 
   "text.config.custom-durability.section.Modded Items": "Mod Items",
 
+
+
   "text.config.custom-durability.category.waystones": "Waystones",
+
+  "text.config.custom-durability.option.waystones.enableWaystones": "Enabled",
 
   "text.config.custom-durability.section.Durability Waystones": "Durability",
   "text.config.custom-durability.section.Unbreakable Waystones": "Unbreakable",
 
   "text.config.custom-durability.option.waystones.durabilityForWarpStone": "Warpstone",
-  "text.config.custom-durability.option.waystones.unbreakableWarpStone": "Warpstone"
+  "text.config.custom-durability.option.waystones.unbreakableWarpStone": "Warpstone",
+
+
+
+  "text.config.custom-durability.category.netheriteExtras": "Netherite Extras",
+
+  "text.config.custom-durability.option.netheriteExtras.enableNetheriteExtras": "Enabled",
+
+  "text.config.custom-durability.section.Durability NetheriteExtras": "Durability",
+  "text.config.custom-durability.section.Unbreakable NetheriteExtras": "Unbreakable",
+
+  "text.config.custom-durability.option.netheriteExtras.durabilityForNetheriteWolfArmor": "Netherite Wolf Armor",
+  "text.config.custom-durability.option.netheriteExtras.unbreakableNetheriteWolfArmor": "Netherite Wolf Armor",
+
+
+
+  "text.config.custom-durability.category.advancedNetherite": "Advanced Netherite",
+
+  "text.config.custom-durability.option.advancedNetherite.enableAdvancedNetherite": "Enabled",
+
+  "text.config.custom-durability.section.Tools AdvancedNetherite": "Tools",
+
+  "text.config.custom-durability.category.advancedNetherite.netheriteIronTools": "Netherite Iron Tools",
+
+  "text.config.custom-durability.section.Durability NetheriteIronTools": "Durability",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronTools.durabilityForNetheriteIronSword": "Netherite-Iron Sword",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronTools.durabilityForNetheriteIronShovel": "Netherite-Iron Shovel",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronTools.durabilityForNetheriteIronPickaxe": "Netherite-Iron Pickaxe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronTools.durabilityForNetheriteIronAxe": "Netherite-Iron Axe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronTools.durabilityForNetheriteIronHoe": "Netherite-Iron Hoe",
+
+  "text.config.custom-durability.section.Unbreakable NetheriteIronTools": "Unbreakable",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronSword": "Netherite-Iron Sword",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronShovel": "Netherite-Iron Shovel",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronPickaxe": "Netherite-Iron Pickaxe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronAxe": "Netherite-Iron Axe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronHoe": "Netherite-Iron Hoe",
+
+  "text.config.custom-durability.category.advancedNetherite.netheriteGoldTools": "Netherite Gold Tools",
+
+  "text.config.custom-durability.section.Durability NetheriteGoldTools": "Durability",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldTools.durabilityForNetheriteGoldSword": "Netherite-Gold Sword",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldTools.durabilityForNetheriteGoldShovel": "Netherite-Gold Shovel",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldTools.durabilityForNetheriteGoldPickaxe": "Netherite-Gold Pickaxe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldTools.durabilityForNetheriteGoldAxe": "Netherite-Gold Axe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldTools.durabilityForNetheriteGoldHoe": "Netherite-Gold Hoe",
+
+  "text.config.custom-durability.section.Unbreakable NetheriteGoldTools": "Unbreakable",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldSword": "Netherite-Gold Sword",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldShovel": "Netherite-Gold Shovel",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldPickaxe": "Netherite-Gold Pickaxe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldAxe": "Netherite-Gold Axe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldHoe": "Netherite-Gold Hoe",
+
+  "text.config.custom-durability.category.advancedNetherite.netheriteEmeraldTools": "Netherite Emerald Tools",
+
+  "text.config.custom-durability.section.Durability NetheriteEmeraldTools": "Durability",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldTools.durabilityForNetheriteEmeraldSword": "Netherite-Emerald Sword",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldTools.durabilityForNetheriteEmeraldShovel": "Netherite-Emerald Shovel",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldTools.durabilityForNetheriteEmeraldPickaxe": "Netherite-Emerald Pickaxe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldTools.durabilityForNetheriteEmeraldAxe": "Netherite-Emerald Axe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldTools.durabilityForNetheriteEmeraldHoe": "Netherite-Emerald Hoe",
+
+  "text.config.custom-durability.section.Unbreakable NetheriteEmeraldTools": "Unbreakable",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldSword": "Netherite-Emerald Sword",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldShovel": "Netherite-Emerald Shovel",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldPickaxe": "Netherite-Emerald Pickaxe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldAxe": "Netherite-Emerald Axe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldHoe": "Netherite-Emerald Hoe",
+
+  "text.config.custom-durability.category.advancedNetherite.netheriteDiamondTools": "Netherite Diamond Tools",
+
+  "text.config.custom-durability.section.Durability NetheriteDiamondTools": "Durability",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondTools.durabilityForNetheriteDiamondSword": "Netherite-Diamond Sword",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondTools.durabilityForNetheriteDiamondShovel": "Netherite-Diamond Shovel",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondTools.durabilityForNetheriteDiamondPickaxe": "Netherite-Diamond Pickaxe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondTools.durabilityForNetheriteDiamondAxe": "Netherite-Diamond Axe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondTools.durabilityForNetheriteDiamondHoe": "Netherite-Diamond Hoe",
+
+  "text.config.custom-durability.section.Unbreakable NetheriteDiamondTools": "Unbreakable",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondSword": "Netherite-Diamond Sword",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondShovel": "Netherite-Diamond Shovel",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondPickaxe": "Netherite-Diamond Pickaxe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondAxe": "Netherite-Diamond Axe",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondHoe": "Netherite-Diamond Hoe",
+
+
+  "text.config.custom-durability.section.Armor AdvancedNetherite": "Armor",
+
+  "text.config.custom-durability.category.advancedNetherite.netheriteIronArmor": "Netherite Iron Armor",
+
+  "text.config.custom-durability.section.Durability NetheriteIronArmor": "Durability",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronArmor.durabilityForNetheriteIronHelmet": "Netherite-Iron Helmet",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronArmor.durabilityForNetheriteIronChestplate": "Netherite-Iron Chestplate",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronArmor.durabilityForNetheriteIronLeggings": "Netherite-Iron Leggings",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronArmor.durabilityForNetheriteIronBoots": "Netherite-Iron Boots",
+
+  "text.config.custom-durability.section.Unbreakable NetheriteIronArmor": "Unbreakable",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronHelmet": "Netherite-Iron Helmet",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronChestplate": "Netherite-Iron Chestplate",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronLeggings": "Netherite-Iron Leggings",
+  "text.config.custom-durability.option.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronBoots": "Netherite-Iron Boots",
+
+  "text.config.custom-durability.category.advancedNetherite.netheriteGoldArmor": "Netherite Gold Armor",
+
+  "text.config.custom-durability.section.Durability NetheriteGoldArmor": "Durability",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldArmor.durabilityForNetheriteGoldHelmet": "Netherite-Gold Helmet",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldArmor.durabilityForNetheriteGoldChestplate": "Netherite-Gold Chestplate",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldArmor.durabilityForNetheriteGoldLeggings": "Netherite-Gold Leggings",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldArmor.durabilityForNetheriteGoldBoots": "Netherite-Gold Boots",
+
+  "text.config.custom-durability.section.Unbreakable NetheriteGoldArmor": "Unbreakable",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldHelmet": "Netherite-Gold Helmet",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldChestplate": "Netherite-Gold Chestplate",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldLeggings": "Netherite-Gold Leggings",
+  "text.config.custom-durability.option.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldBoots": "Netherite-Gold Boots",
+
+  "text.config.custom-durability.category.advancedNetherite.netheriteEmeraldArmor": "Netherite Emerald Armor",
+
+  "text.config.custom-durability.section.Durability NetheriteEmeraldArmor": "Durability",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldArmor.durabilityForNetheriteEmeraldHelmet": "Netherite-Emerald Helmet",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldArmor.durabilityForNetheriteEmeraldChestplate": "Netherite-Emerald Chestplate",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldArmor.durabilityForNetheriteEmeraldLeggings": "Netherite-Emerald Leggings",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldArmor.durabilityForNetheriteEmeraldBoots": "Netherite-Emerald Boots",
+
+  "text.config.custom-durability.section.Unbreakable NetheriteEmeraldArmor": "Unbreakable",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldHelmet": "Netherite-Emerald Helmet",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldChestplate": "Netherite-Emerald Chestplate",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldLeggings": "Netherite-Emerald Leggings",
+  "text.config.custom-durability.option.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldBoots": "Netherite-Emerald Boots",
+
+  "text.config.custom-durability.category.advancedNetherite.netheriteDiamondArmor": "Netherite Diamond Armor",
+
+  "text.config.custom-durability.section.Durability NetheriteDiamondArmor": "Durability",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondArmor.durabilityForNetheriteDiamondHelmet": "Netherite-Diamond Helmet",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondArmor.durabilityForNetheriteDiamondChestplate": "Netherite-Diamond Chestplate",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondArmor.durabilityForNetheriteDiamondLeggings": "Netherite-Diamond Leggings",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondArmor.durabilityForNetheriteDiamondBoots": "Netherite-Diamond Boots",
+
+  "text.config.custom-durability.section.Unbreakable NetheriteDiamondArmor": "Unbreakable",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondHelmet": "Netherite-Diamond Helmet",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondChestplate": "Netherite-Diamond Chestplate",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondLeggings": "Netherite-Diamond Leggings",
+  "text.config.custom-durability.option.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondBoots": "Netherite-Diamond Boots"
 }
