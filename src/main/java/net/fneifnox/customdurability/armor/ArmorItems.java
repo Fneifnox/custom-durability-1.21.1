@@ -58,25 +58,29 @@ public class ArmorItems {
 
             if (!CONFIG.ArmorChainmail.unbreakableChainmailHelmet()) {
                 context.modify(chainHelmet, components -> components.add(MAX_DAMAGE, CONFIG.ArmorChainmail.durabilityForChainmailHelmet()));
-            } else {
+            }
+            else {
                 context.modify(chainHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorChainmail.unbreakableChainmailHelmet())));
             }
 
             if (!CONFIG.ArmorChainmail.unbreakableChainmailChestplate()) {
                 context.modify(chainChestplate, components -> components.add(MAX_DAMAGE, CONFIG.ArmorChainmail.durabilityForChainmailChestplate()));
-            } else {
+            }
+            else {
                 context.modify(chainChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorChainmail.unbreakableChainmailChestplate())));
             }
 
             if (!CONFIG.ArmorChainmail.unbreakableChainmailLeggings()) {
                 context.modify(chainLeggings, components -> components.add(MAX_DAMAGE, CONFIG.ArmorChainmail.durabilityForChainmailLeggings()));
-            } else {
+            }
+            else {
                 context.modify(chainLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorChainmail.unbreakableChainmailLeggings())));
             }
 
             if (!CONFIG.ArmorChainmail.unbreakableChainmailBoots()) {
                 context.modify(chainBoots, components -> components.add(MAX_DAMAGE, CONFIG.ArmorChainmail.durabilityForChainmailBoots()));
-            } else {
+            }
+            else {
                 context.modify(chainBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorChainmail.unbreakableChainmailBoots())));
             }
         });
@@ -91,25 +95,29 @@ public class ArmorItems {
 
             if (!CONFIG.ArmorIron.unbreakableIronHelmet()) {
                 context.modify(ironHelmet, components -> components.add(MAX_DAMAGE, CONFIG.ArmorIron.durabilityForIronHelmet()));
-            } else {
+            }
+            else {
                 context.modify(ironHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorIron.unbreakableIronHelmet())));
             }
 
             if (!CONFIG.ArmorIron.unbreakableIronChestplate()) {
                 context.modify(ironChestplate, components -> components.add(MAX_DAMAGE, CONFIG.ArmorIron.durabilityForIronChestplate()));
-            } else {
+            }
+            else {
                 context.modify(ironChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorIron.unbreakableIronChestplate())));
             }
 
             if (!CONFIG.ArmorIron.unbreakableIronLeggings()) {
                 context.modify(ironLeggings, components -> components.add(MAX_DAMAGE, CONFIG.ArmorIron.durabilityForIronLeggings()));
-            } else {
+            }
+            else {
                 context.modify(ironLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorIron.unbreakableIronLeggings())));
             }
 
             if (!CONFIG.ArmorIron.unbreakableIronBoots()) {
                 context.modify(ironBoots, components -> components.add(MAX_DAMAGE, CONFIG.ArmorIron.durabilityForIronBoots()));
-            } else {
+            }
+            else {
                 context.modify(ironBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorIron.unbreakableIronBoots())));
             }
         });
@@ -124,25 +132,29 @@ public class ArmorItems {
 
             if (!CONFIG.ArmorGolden.unbreakableGoldenHelmet()) {
                 context.modify(goldenHelmet, components -> components.add(MAX_DAMAGE, CONFIG.ArmorGolden.durabilityForGoldenHelmet()));
-            } else {
+            }
+            else {
                 context.modify(goldenHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorGolden.unbreakableGoldenHelmet())));
             }
 
             if (!CONFIG.ArmorGolden.unbreakableGoldenChestplate()) {
                 context.modify(goldenChestplate, components -> components.add(MAX_DAMAGE, CONFIG.ArmorGolden.durabilityForGoldenChestplate()));
-            } else {
+            }
+            else {
                 context.modify(goldenChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorGolden.unbreakableGoldenChestplate())));
             }
 
             if (!CONFIG.ArmorGolden.unbreakableGoldenLeggings()) {
                 context.modify(goldenLeggings, components -> components.add(MAX_DAMAGE, CONFIG.ArmorGolden.durabilityForGoldenLeggings()));
-            } else {
+            }
+            else {
                 context.modify(goldenLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorGolden.unbreakableGoldenLeggings())));
             }
 
             if (!CONFIG.ArmorGolden.unbreakableGoldenBoots()) {
                 context.modify(goldenBoots, components -> components.add(MAX_DAMAGE, CONFIG.ArmorGolden.durabilityForGoldenBoots()));
-            } else {
+            }
+            else {
                 context.modify(goldenBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorGolden.unbreakableGoldenBoots())));
             }
         });
@@ -157,25 +169,29 @@ public class ArmorItems {
 
             if (!CONFIG.ArmorDiamond.unbreakableDiamondHelmet()) {
                 context.modify(diamondHelmet, components -> components.add(MAX_DAMAGE, CONFIG.ArmorDiamond.durabilityForDiamondHelmet()));
-            } else {
+            }
+            else {
                 context.modify(diamondHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorDiamond.unbreakableDiamondHelmet())));
             }
 
             if (!CONFIG.ArmorDiamond.unbreakableDiamondChestplate()) {
                 context.modify(diamondChestplate, components -> components.add(MAX_DAMAGE, CONFIG.ArmorDiamond.durabilityForDiamondChestplate()));
-            } else {
+            }
+            else {
                 context.modify(diamondChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorDiamond.unbreakableDiamondChestplate())));
             }
 
             if (!CONFIG.ArmorDiamond.unbreakableDiamondLeggings()) {
                 context.modify(diamondLeggings, components -> components.add(MAX_DAMAGE, CONFIG.ArmorDiamond.durabilityForDiamondLeggings()));
-            } else {
+            }
+            else {
                 context.modify(diamondLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorDiamond.unbreakableDiamondLeggings())));
             }
 
             if (!CONFIG.ArmorDiamond.unbreakableDiamondBoots()) {
                 context.modify(diamondBoots, components -> components.add(MAX_DAMAGE, CONFIG.ArmorDiamond.durabilityForDiamondBoots()));
-            } else {
+            }
+            else {
                 context.modify(diamondBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorDiamond.unbreakableDiamondBoots())));
             }
         });
@@ -190,25 +206,29 @@ public class ArmorItems {
 
             if (!CONFIG.ArmorNetherite.unbreakableNetheriteHelmet()) {
                 context.modify(netheriteHelmet, components -> components.add(MAX_DAMAGE, CONFIG.ArmorNetherite.durabilityForNetheriteHelmet()));
-            } else {
+            }
+            else {
                 context.modify(netheriteHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorNetherite.unbreakableNetheriteHelmet())));
             }
 
             if (!CONFIG.ArmorNetherite.unbreakableNetheriteChestplate()) {
                 context.modify(netheriteChestplate, components -> components.add(MAX_DAMAGE, CONFIG.ArmorNetherite.durabilityForNetheriteChestplate()));
-            } else {
+            }
+            else {
                 context.modify(netheriteChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorNetherite.unbreakableNetheriteChestplate())));
             }
 
             if (!CONFIG.ArmorNetherite.unbreakableNetheriteLeggings()) {
                 context.modify(netheriteLeggings, components -> components.add(MAX_DAMAGE, CONFIG.ArmorNetherite.durabilityForNetheriteLeggings()));
-            } else {
+            }
+            else {
                 context.modify(netheriteLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorNetherite.unbreakableNetheriteLeggings())));
             }
 
             if (!CONFIG.ArmorNetherite.unbreakableNetheriteBoots()) {
                 context.modify(netheriteBoots, components -> components.add(MAX_DAMAGE, CONFIG.ArmorNetherite.durabilityForNetheriteBoots()));
-            } else {
+            }
+            else {
                 context.modify(netheriteBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorNetherite.unbreakableNetheriteBoots())));
             }
         });
