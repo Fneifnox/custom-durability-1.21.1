@@ -38,15 +38,15 @@ public class OtherArmorItems {
         });
     }
 
-    public static void setDurabilityAndUnbreakableAnimalArmor() {
+    public static void setDurabilityAndUnbreakableWolfArmor() {
         DefaultItemComponentEvents.MODIFY.register(context -> {
-            Item animalArmor = Registries.ITEM.get(Identifier.of("minecraft", "wolf_armor"));
+            Item wolfArmor = Registries.ITEM.get(Identifier.of("minecraft", "wolf_armor"));
 
-            if (!CONFIG.ArmorOther.unbreakableAnimalArmor()) {
-                context.modify(animalArmor, components -> components.add(MAX_DAMAGE, CONFIG.ArmorOther.durabilityForAnimalArmor()));
+            if (!CONFIG.ArmorOther.unbreakableWolfArmor()) {
+                context.modify(wolfArmor, components -> components.add(MAX_DAMAGE, CONFIG.ArmorOther.durabilityForWolfArmor()));
             }
             else {
-                context.modify(animalArmor, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorOther.unbreakableAnimalArmor())));
+                context.modify(wolfArmor, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorOther.unbreakableWolfArmor())));
             }
         });
     }

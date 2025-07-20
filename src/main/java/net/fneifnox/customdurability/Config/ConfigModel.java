@@ -448,7 +448,7 @@ public class ConfigModel {
         public int durabilityForElytra = 432;
         @RestartRequired
         @Comment("Default: 64")
-        public int durabilityForAnimalArmor = 64;
+        public int durabilityForWolfArmor = 64;
 
         @SectionHeader("ArmorOther Unbreakable")
 
@@ -458,15 +458,287 @@ public class ConfigModel {
         public boolean unbreakableElytra = false;
         @RestartRequired
         @Comment("If enabled let's your wolf become invincible")
-        public boolean unbreakableAnimalArmor = false;
+        public boolean unbreakableWolfArmor = false;
     }
 
     @SectionHeader("Modded Items")
 
+    @Nest
+    public AdvancedNetherite advancedNetherite = new AdvancedNetherite();
+    public static class AdvancedNetherite {
+        @RestartRequired
+        public boolean enableAdvancedNetherite = true;
+
+        @SectionHeader("Tools AdvancedNetherite")
+
+        @Comment("Default: 2281")
+        @Nest
+        public AdvancedNetherite.NetheriteIronTools netheriteIronTools = new AdvancedNetherite.NetheriteIronTools();
+        public static class NetheriteIronTools {
+            @SectionHeader("Durability NetheriteIronTools")
+
+            @RestartRequired
+            public int durabilityForNetheriteIronSword = 2281;
+            @RestartRequired
+            public int durabilityForNetheriteIronShovel = 2281;
+            @RestartRequired
+            public int durabilityForNetheriteIronPickaxe = 2281;
+            @RestartRequired
+            public int durabilityForNetheriteIronAxe = 2281;
+            @RestartRequired
+            public int durabilityForNetheriteIronHoe = 2281;
+
+            @SectionHeader("Unbreakable NetheriteIronTools")
+
+            @RestartRequired
+            public boolean unbreakableNetheriteIronSword = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteIronShovel = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteIronPickaxe = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteIronAxe = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteIronHoe = false;
+        }
+
+        @Comment("Default: 2313")
+        @Nest
+        public AdvancedNetherite.NetheriteGoldTools netheriteGoldTools = new AdvancedNetherite.NetheriteGoldTools();
+        public static class NetheriteGoldTools {
+            @SectionHeader("Durability NetheriteGoldTools")
+
+            @RestartRequired
+            public int durabilityForNetheriteGoldSword = 2313;
+            @RestartRequired
+            public int durabilityForNetheriteGoldShovel = 2313;
+            @RestartRequired
+            public int durabilityForNetheriteGoldPickaxe = 2313;
+            @RestartRequired
+            public int durabilityForNetheriteGoldAxe = 2313;
+            @RestartRequired
+            public int durabilityForNetheriteGoldHoe = 2313;
+
+            @SectionHeader("Unbreakable NetheriteGoldTools")
+
+            @RestartRequired
+            public boolean unbreakableNetheriteGoldSword = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteGoldShovel = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteGoldPickaxe = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteGoldAxe = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteGoldHoe = false;
+        }
+
+        @Comment("Default: 2651")
+        @Nest
+        public AdvancedNetherite.NetheriteEmeraldTools netheriteEmeraldTools = new AdvancedNetherite.NetheriteEmeraldTools();
+        public static class NetheriteEmeraldTools {
+            @SectionHeader("Durability NetheriteEmeraldTools")
+
+            @RestartRequired
+            public int durabilityForNetheriteEmeraldSword = 2651;
+            @RestartRequired
+            public int durabilityForNetheriteEmeraldShovel = 2651;
+            @RestartRequired
+            public int durabilityForNetheriteEmeraldPickaxe = 2651;
+            @RestartRequired
+            public int durabilityForNetheriteEmeraldAxe = 2651;
+            @RestartRequired
+            public int durabilityForNetheriteEmeraldHoe = 2651;
+
+            @SectionHeader("Unbreakable NetheriteEmeraldTools")
+
+            @RestartRequired
+            public boolean unbreakableNetheriteEmeraldSword = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteEmeraldShovel = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteEmeraldPickaxe = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteEmeraldAxe = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteEmeraldHoe = false;
+        }
+
+        @Comment("Default: 3092")
+        @Nest
+        public AdvancedNetherite.NetheriteDiamondTools netheriteDiamondTools = new AdvancedNetherite.NetheriteDiamondTools();
+        public static class NetheriteDiamondTools {
+            @SectionHeader("Durability NetheriteDiamondTools")
+
+            @RestartRequired
+            public int durabilityForNetheriteDiamondSword = 3092;
+            @RestartRequired
+            public int durabilityForNetheriteDiamondShovel = 3092;
+            @RestartRequired
+            public int durabilityForNetheriteDiamondPickaxe = 3092;
+            @RestartRequired
+            public int durabilityForNetheriteDiamondAxe = 3092;
+            @RestartRequired
+            public int durabilityForNetheriteDiamondHoe = 3092;
+
+            @SectionHeader("Unbreakable NetheriteDiamondTools")
+
+            @RestartRequired
+            public boolean unbreakableNetheriteDiamondSword = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteDiamondShovel = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteDiamondPickaxe = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteDiamondAxe = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteDiamondHoe = false;
+        }
+
+
+        @SectionHeader("Armor AdvancedNetherite")
+
+        @Nest
+        public AdvancedNetherite.NetheriteIronArmor netheriteIronArmor = new AdvancedNetherite.NetheriteIronArmor();
+        public static class NetheriteIronArmor {
+            @SectionHeader("Durability NetheriteIronArmor")
+
+            @RestartRequired
+            @Comment("Default: 429")
+            public int durabilityForNetheriteIronHelmet = 429;
+            @RestartRequired
+            @Comment("Default: 624")
+            public int durabilityForNetheriteIronChestplate = 624;
+            @RestartRequired
+            @Comment("Default: 585")
+            public int durabilityForNetheriteIronLeggings = 585;
+            @RestartRequired
+            @Comment("Default: 507")
+            public int durabilityForNetheriteIronBoots = 507;
+
+            @SectionHeader("Unbreakable NetheriteIronArmor")
+
+            @RestartRequired
+            public boolean unbreakableNetheriteIronHelmet = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteIronChestplate = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteIronLeggings = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteIronBoots = false;
+        }
+
+        @Nest
+        public AdvancedNetherite.NetheriteGoldArmor netheriteGoldArmor = new AdvancedNetherite.NetheriteGoldArmor();
+        public static class NetheriteGoldArmor {
+            @SectionHeader("Durability NetheriteGoldArmor")
+
+            @RestartRequired
+            @Comment("Default: 451")
+            public int durabilityForNetheriteGoldHelmet = 451;
+            @RestartRequired
+            @Comment("Default: 656")
+            public int durabilityForNetheriteGoldChestplate = 656;
+            @RestartRequired
+            @Comment("Default: 615")
+            public int durabilityForNetheriteGoldLeggings = 615;
+            @RestartRequired
+            @Comment("Default: 533")
+            public int durabilityForNetheriteGoldBoots = 533;
+
+            @SectionHeader("Unbreakable NetheriteGoldArmor")
+
+            @RestartRequired
+            public boolean unbreakableNetheriteGoldHelmet = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteGoldChestplate = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteGoldLeggings = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteGoldBoots = false;
+        }
+
+        @Nest
+        public AdvancedNetherite.NetheriteEmeraldArmor netheriteEmeraldArmor = new AdvancedNetherite.NetheriteEmeraldArmor();
+        public static class NetheriteEmeraldArmor {
+            @SectionHeader("Durability NetheriteEmeraldArmor")
+
+            @RestartRequired
+            @Comment("Default: 473")
+            public int durabilityForNetheriteEmeraldHelmet = 473;
+            @RestartRequired
+            @Comment("Default: 688")
+            public int durabilityForNetheriteEmeraldChestplate = 688;
+            @RestartRequired
+            @Comment("Default: 645")
+            public int durabilityForNetheriteEmeraldLeggings = 645;
+            @RestartRequired
+            @Comment("Default: 559")
+            public int durabilityForNetheriteEmeraldBoots = 559;
+
+            @SectionHeader("Unbreakable NetheriteEmeraldArmor")
+
+            @RestartRequired
+            public boolean unbreakableNetheriteEmeraldHelmet = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteEmeraldChestplate = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteEmeraldLeggings = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteEmeraldBoots = false;
+        }
+
+        @Nest
+        public AdvancedNetherite.NetheriteDiamondArmor netheriteDiamondArmor = new AdvancedNetherite.NetheriteDiamondArmor();
+        public static class NetheriteDiamondArmor {
+            @SectionHeader("Durability NetheriteDiamondArmor")
+
+            @RestartRequired
+            @Comment("Default: 517")
+            public int durabilityForNetheriteDiamondHelmet = 517;
+            @RestartRequired
+            @Comment("Default: 752")
+            public int durabilityForNetheriteDiamondChestplate = 752;
+            @RestartRequired
+            @Comment("Default: 705")
+            public int durabilityForNetheriteDiamondLeggings = 705;
+            @RestartRequired
+            @Comment("Default: 611")
+            public int durabilityForNetheriteDiamondBoots = 611;
+
+            @SectionHeader("Unbreakable NetheriteDiamondArmor")
+
+            @RestartRequired
+            public boolean unbreakableNetheriteDiamondHelmet = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteDiamondChestplate = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteDiamondLeggings = false;
+            @RestartRequired
+            public boolean unbreakableNetheriteDiamondBoots = false;
+        }
+    }
+
+    @Nest
+    public NetheriteExtras netheriteExtras = new NetheriteExtras();
+    public static class NetheriteExtras {
+        @RestartRequired
+        public boolean enableNetheriteExtras = true;
+        @SectionHeader("Durability NetheriteExtras")
+        @RestartRequired
+        @Comment("Default: 128")
+        public int durabilityForNetheriteWolfArmor = 128;
+
+        @SectionHeader("Unbreakable NetheriteExtras")
+        @RestartRequired
+        public boolean unbreakableNetheriteWolfArmor = false;
+    }
 
     @Nest
     public Waystones waystones = new Waystones();
     public static class Waystones {
+        @RestartRequired
+        public boolean enableWaystones = true;
         @SectionHeader("Durability Waystones")
         @RestartRequired
         @Comment("Default: 128")

@@ -2,9 +2,12 @@ package net.fneifnox.customdurability;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.fneifnox.customdurability.Config.CustomD;
 import net.fneifnox.customdurability.armor.ArmorItems;
 import net.fneifnox.customdurability.armor.OtherArmorItems;
+import net.fneifnox.customdurability.compat.AdvancedNetheriteCompat;
+import net.fneifnox.customdurability.compat.NetheriteExtrasCompat;
 import net.fneifnox.customdurability.compat.WaystonesCompat;
 import net.fneifnox.customdurability.tools.OtherToolItems;
 import net.fneifnox.customdurability.tools.ToolItems;
@@ -48,9 +51,27 @@ public class CustomDurability implements ModInitializer {
 
 		OtherArmorItems.setDurabilityAndUnbreakableTurtleHelmet();
 		OtherArmorItems.setDurabilityAndUnbreakableElytra();
-		OtherArmorItems.setDurabilityAndUnbreakableAnimalArmor();
+		OtherArmorItems.setDurabilityAndUnbreakableWolfArmor();
 
-		WaystonesCompat.setDurabilityAndUnbreakable();
+		if (FabricLoader.getInstance().isModLoaded("advancednetherite") && CONFIG.advancedNetherite.enableAdvancedNetherite()) {
+			AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteIronTools();
+			AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteGoldTools();
+			AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteEmeraldTools();
+			AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteDiamondTools();
+
+			AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteIronArmor();
+			AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteGoldArmor();
+			AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteEmeraldArmor();
+			AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteDiamondArmor();
+		}
+
+		if (FabricLoader.getInstance().isModLoaded("netheriteextras") && CONFIG.netheriteExtras.enableNetheriteExtras()) {
+			NetheriteExtrasCompat.setDurabilityAndUnbreakableNetheriteWolfArmor();
+		}
+
+		if (FabricLoader.getInstance().isModLoaded("waystones") && CONFIG.waystones.enableWaystones()) {
+			WaystonesCompat.setDurabilityAndUnbreakableWarpStone();
+		}
 	}
 
 	public static final CustomD CONFIG = CustomD.createAndLoad();
