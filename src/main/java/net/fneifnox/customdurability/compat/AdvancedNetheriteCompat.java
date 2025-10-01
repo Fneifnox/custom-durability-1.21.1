@@ -1,10 +1,10 @@
 package net.fneifnox.customdurability.compat;
 
 import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
-import net.minecraft.component.type.UnbreakableComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Unit;
 
 import static net.fneifnox.customdurability.CustomDurability.CONFIG;
 import static net.minecraft.component.DataComponentTypes.MAX_DAMAGE;
@@ -24,35 +24,35 @@ public class AdvancedNetheriteCompat {
                 context.modify(netheriteIronSword, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteIronTools.durabilityForNetheriteIronSword()));
             }
             else {
-                context.modify(netheriteIronSword, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronSword())));
+                context.modify(netheriteIronSword, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronShovel()) {
                 context.modify(netheriteIronShovel, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteIronTools.durabilityForNetheriteIronShovel()));
             }
             else {
-                context.modify(netheriteIronShovel, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronShovel())));
+                context.modify(netheriteIronShovel, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronPickaxe()) {
                 context.modify(netheriteIronPickaxe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteIronTools.durabilityForNetheriteIronPickaxe()));
             }
             else {
-                context.modify(netheriteIronPickaxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronPickaxe())));
+                context.modify(netheriteIronPickaxe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronAxe()) {
                 context.modify(netheriteIronAxe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteIronTools.durabilityForNetheriteIronAxe()));
             }
             else {
-                context.modify(netheriteIronAxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronAxe())));
+                context.modify(netheriteIronAxe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronHoe()) {
                 context.modify(netheriteIronHoe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteIronTools.durabilityForNetheriteIronHoe()));
             }
             else {
-                context.modify(netheriteIronHoe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteIronTools.unbreakableNetheriteIronHoe())));
+                context.modify(netheriteIronHoe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -69,35 +69,35 @@ public class AdvancedNetheriteCompat {
                 context.modify(netheriteGoldSword, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteGoldTools.durabilityForNetheriteGoldSword()));
             }
             else {
-                context.modify(netheriteGoldSword, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldSword())));
+                context.modify(netheriteGoldSword, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldShovel()) {
                 context.modify(netheriteGoldShovel, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteGoldTools.durabilityForNetheriteGoldShovel()));
             }
             else {
-                context.modify(netheriteGoldShovel, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldShovel())));
+                context.modify(netheriteGoldShovel, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldPickaxe()) {
                 context.modify(netheriteGoldPickaxe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteGoldTools.durabilityForNetheriteGoldPickaxe()));
             }
             else {
-                context.modify(netheriteGoldPickaxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldPickaxe())));
+                context.modify(netheriteGoldPickaxe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldAxe()) {
                 context.modify(netheriteGoldAxe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteGoldTools.durabilityForNetheriteGoldAxe()));
             }
             else {
-                context.modify(netheriteGoldAxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldAxe())));
+                context.modify(netheriteGoldAxe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldHoe()) {
                 context.modify(netheriteGoldHoe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteGoldTools.durabilityForNetheriteGoldHoe()));
             }
             else {
-                context.modify(netheriteGoldHoe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteGoldTools.unbreakableNetheriteGoldHoe())));
+                context.modify(netheriteGoldHoe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -114,35 +114,35 @@ public class AdvancedNetheriteCompat {
                 context.modify(netheriteEmeraldSword, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteEmeraldTools.durabilityForNetheriteEmeraldSword()));
             }
             else {
-                context.modify(netheriteEmeraldSword, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldSword())));
+                context.modify(netheriteEmeraldSword, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldShovel()) {
                 context.modify(netheriteEmeraldShovel, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteEmeraldTools.durabilityForNetheriteEmeraldShovel()));
             }
             else {
-                context.modify(netheriteEmeraldShovel, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldShovel())));
+                context.modify(netheriteEmeraldShovel, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldPickaxe()) {
                 context.modify(netheriteEmeraldPickaxe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteEmeraldTools.durabilityForNetheriteEmeraldPickaxe()));
             }
             else {
-                context.modify(netheriteEmeraldPickaxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldPickaxe())));
+                context.modify(netheriteEmeraldPickaxe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldAxe()) {
                 context.modify(netheriteEmeraldAxe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteEmeraldTools.durabilityForNetheriteEmeraldAxe()));
             }
             else {
-                context.modify(netheriteEmeraldAxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldAxe())));
+                context.modify(netheriteEmeraldAxe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldHoe()) {
                 context.modify(netheriteEmeraldHoe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteEmeraldTools.durabilityForNetheriteEmeraldHoe()));
             }
             else {
-                context.modify(netheriteEmeraldHoe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteEmeraldTools.unbreakableNetheriteEmeraldHoe())));
+                context.modify(netheriteEmeraldHoe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -159,35 +159,35 @@ public class AdvancedNetheriteCompat {
                 context.modify(netheriteDiamondSword, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteDiamondTools.durabilityForNetheriteDiamondSword()));
             }
             else {
-                context.modify(netheriteDiamondSword, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondSword())));
+                context.modify(netheriteDiamondSword, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondShovel()) {
                 context.modify(netheriteDiamondShovel, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteDiamondTools.durabilityForNetheriteDiamondShovel()));
             }
             else {
-                context.modify(netheriteDiamondShovel, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondShovel())));
+                context.modify(netheriteDiamondShovel, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondPickaxe()) {
                 context.modify(netheriteDiamondPickaxe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteDiamondTools.durabilityForNetheriteDiamondPickaxe()));
             }
             else {
-                context.modify(netheriteDiamondPickaxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondPickaxe())));
+                context.modify(netheriteDiamondPickaxe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondAxe()) {
                 context.modify(netheriteDiamondAxe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteDiamondTools.durabilityForNetheriteDiamondAxe()));
             }
             else {
-                context.modify(netheriteDiamondAxe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondAxe())));
+                context.modify(netheriteDiamondAxe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondHoe()) {
                 context.modify(netheriteDiamondHoe, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteDiamondTools.durabilityForNetheriteDiamondHoe()));
             }
             else {
-                context.modify(netheriteDiamondHoe, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteDiamondTools.unbreakableNetheriteDiamondHoe())));
+                context.modify(netheriteDiamondHoe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -204,28 +204,28 @@ public class AdvancedNetheriteCompat {
                 context.modify(netheriteIronHelmet, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteIronArmor.durabilityForNetheriteIronHelmet()));
             }
             else {
-                context.modify(netheriteIronHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronHelmet())));
+                context.modify(netheriteIronHelmet, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronChestplate()) {
                 context.modify(netheriteIronChestplate, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteIronArmor.durabilityForNetheriteIronChestplate()));
             }
             else {
-                context.modify(netheriteIronChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronChestplate())));
+                context.modify(netheriteIronChestplate, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronLeggings()) {
                 context.modify(netheriteIronLeggings, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteIronArmor.durabilityForNetheriteIronLeggings()));
             }
             else {
-                context.modify(netheriteIronLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronLeggings())));
+                context.modify(netheriteIronLeggings, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronBoots()) {
                 context.modify(netheriteIronBoots, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteIronArmor.durabilityForNetheriteIronBoots()));
             }
             else {
-                context.modify(netheriteIronBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteIronArmor.unbreakableNetheriteIronBoots())));
+                context.modify(netheriteIronBoots, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -241,28 +241,28 @@ public class AdvancedNetheriteCompat {
                 context.modify(netheriteGoldHelmet, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteGoldArmor.durabilityForNetheriteGoldHelmet()));
             }
             else {
-                context.modify(netheriteGoldHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldHelmet())));
+                context.modify(netheriteGoldHelmet, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldChestplate()) {
                 context.modify(netheriteGoldChestplate, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteGoldArmor.durabilityForNetheriteGoldChestplate()));
             }
             else {
-                context.modify(netheriteGoldChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldChestplate())));
+                context.modify(netheriteGoldChestplate, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldLeggings()) {
                 context.modify(netheriteGoldLeggings, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteGoldArmor.durabilityForNetheriteGoldLeggings()));
             }
             else {
-                context.modify(netheriteGoldLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldLeggings())));
+                context.modify(netheriteGoldLeggings, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldBoots()) {
                 context.modify(netheriteGoldBoots, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteGoldArmor.durabilityForNetheriteGoldBoots()));
             }
             else {
-                context.modify(netheriteGoldBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteGoldArmor.unbreakableNetheriteGoldBoots())));
+                context.modify(netheriteGoldBoots, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -278,28 +278,28 @@ public class AdvancedNetheriteCompat {
                 context.modify(netheriteEmeraldHelmet, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteEmeraldArmor.durabilityForNetheriteEmeraldHelmet()));
             }
             else {
-                context.modify(netheriteEmeraldHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldHelmet())));
+                context.modify(netheriteEmeraldHelmet, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldChestplate()) {
                 context.modify(netheriteEmeraldChestplate, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteEmeraldArmor.durabilityForNetheriteEmeraldChestplate()));
             }
             else {
-                context.modify(netheriteEmeraldChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldChestplate())));
+                context.modify(netheriteEmeraldChestplate, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldLeggings()) {
                 context.modify(netheriteEmeraldLeggings, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteEmeraldArmor.durabilityForNetheriteEmeraldLeggings()));
             }
             else {
-                context.modify(netheriteEmeraldLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldLeggings())));
+                context.modify(netheriteEmeraldLeggings, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldBoots()) {
                 context.modify(netheriteEmeraldBoots, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteEmeraldArmor.durabilityForNetheriteEmeraldBoots()));
             }
             else {
-                context.modify(netheriteEmeraldBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteEmeraldArmor.unbreakableNetheriteEmeraldBoots())));
+                context.modify(netheriteEmeraldBoots, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -315,28 +315,28 @@ public class AdvancedNetheriteCompat {
                 context.modify(netheriteDiamondHelmet, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteDiamondArmor.durabilityForNetheriteDiamondHelmet()));
             }
             else {
-                context.modify(netheriteDiamondHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondHelmet())));
+                context.modify(netheriteDiamondHelmet, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondChestplate()) {
                 context.modify(netheriteDiamondChestplate, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteDiamondArmor.durabilityForNetheriteDiamondChestplate()));
             }
             else {
-                context.modify(netheriteDiamondChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondChestplate())));
+                context.modify(netheriteDiamondChestplate, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondLeggings()) {
                 context.modify(netheriteDiamondLeggings, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteDiamondArmor.durabilityForNetheriteDiamondLeggings()));
             }
             else {
-                context.modify(netheriteDiamondLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondLeggings())));
+                context.modify(netheriteDiamondLeggings, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondBoots()) {
                 context.modify(netheriteDiamondBoots, components -> components.add(MAX_DAMAGE, CONFIG.advancedNetherite.netheriteDiamondArmor.durabilityForNetheriteDiamondBoots()));
             }
             else {
-                context.modify(netheriteDiamondBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondBoots())));
+                context.modify(netheriteDiamondBoots, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }

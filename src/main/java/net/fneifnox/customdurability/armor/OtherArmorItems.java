@@ -1,10 +1,10 @@
 package net.fneifnox.customdurability.armor;
 
 import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
-import net.minecraft.component.type.UnbreakableComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Unit;
 
 import static net.fneifnox.customdurability.CustomDurability.CONFIG;
 import static net.minecraft.component.DataComponentTypes.MAX_DAMAGE;
@@ -20,7 +20,7 @@ public class OtherArmorItems {
                 context.modify(turtleHelmet, components -> components.add(MAX_DAMAGE, CONFIG.ArmorOther.durabilityForTurtleHelmet()));
             }
             else {
-                context.modify(turtleHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorOther.unbreakableTurtleHelmet())));
+                context.modify(turtleHelmet, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -33,7 +33,7 @@ public class OtherArmorItems {
                 context.modify(elytra, components -> components.add(MAX_DAMAGE, CONFIG.ArmorOther.durabilityForElytra()));
             }
             else {
-                context.modify(elytra, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorOther.unbreakableElytra())));
+                context.modify(elytra, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -46,7 +46,7 @@ public class OtherArmorItems {
                 context.modify(wolfArmor, components -> components.add(MAX_DAMAGE, CONFIG.ArmorOther.durabilityForWolfArmor()));
             }
             else {
-                context.modify(wolfArmor, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ArmorOther.unbreakableWolfArmor())));
+                context.modify(wolfArmor, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
