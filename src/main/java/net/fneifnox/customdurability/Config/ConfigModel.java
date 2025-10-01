@@ -457,7 +457,7 @@ public class ConfigModel {
         @RestartRequired
         public boolean unbreakableElytra = false;
         @RestartRequired
-        @Comment("If enabled let's your wolf become invincible")
+        @Comment("If enabled lets your wolf become invincible")
         public boolean unbreakableWolfArmor = false;
     }
 

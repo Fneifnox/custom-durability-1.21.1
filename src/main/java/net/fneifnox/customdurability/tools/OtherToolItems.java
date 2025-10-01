@@ -1,10 +1,10 @@
 package net.fneifnox.customdurability.tools;
 
 import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
-import net.minecraft.component.type.UnbreakableComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Unit;
 
 import static net.fneifnox.customdurability.CustomDurability.CONFIG;
 import static net.minecraft.component.DataComponentTypes.MAX_DAMAGE;
@@ -20,7 +20,7 @@ public class OtherToolItems {
                 context.modify(trident, components -> components.add(MAX_DAMAGE, CONFIG.ToolsOther.durabilityForTrident()));
             }
             else {
-                context.modify(trident, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsOther.unbreakableTrident())));
+                context.modify(trident, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -33,7 +33,7 @@ public class OtherToolItems {
                 context.modify(mace, components -> components.add(MAX_DAMAGE, CONFIG.ToolsOther.durabilityForMace()));
             }
             else {
-                context.modify(mace, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsOther.unbreakableMace())));
+                context.modify(mace, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -46,7 +46,7 @@ public class OtherToolItems {
                 context.modify(bow, components -> components.add(MAX_DAMAGE, CONFIG.ToolsOther.durabilityForBow()));
             }
             else {
-                context.modify(bow, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsOther.unbreakableBow())));
+                context.modify(bow, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -59,7 +59,7 @@ public class OtherToolItems {
                 context.modify(crossbow, components -> components.add(MAX_DAMAGE, CONFIG.ToolsOther.durabilityForCrossbow()));
             }
             else {
-                context.modify(crossbow, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsOther.unbreakableCrossbow())));
+                context.modify(crossbow, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -72,7 +72,7 @@ public class OtherToolItems {
                 context.modify(shield, components -> components.add(MAX_DAMAGE, CONFIG.ToolsOther.durabilityForShield()));
             }
             else {
-                context.modify(shield, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsOther.unbreakableShield())));
+                context.modify(shield, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -85,7 +85,7 @@ public class OtherToolItems {
                 context.modify(fishingRod, components -> components.add(MAX_DAMAGE, CONFIG.ToolsOther.durabilityForFishingRod()));
             }
             else {
-                context.modify(fishingRod, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsOther.unbreakableFishingRod())));
+                context.modify(fishingRod, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -98,7 +98,7 @@ public class OtherToolItems {
                 context.modify(flintAndSteel, components -> components.add(MAX_DAMAGE, CONFIG.ToolsOther.durabilityForFlintAndSteel()));
             }
             else {
-                context.modify(flintAndSteel, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsOther.unbreakableFlintAndSteel())));
+                context.modify(flintAndSteel, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -111,7 +111,7 @@ public class OtherToolItems {
                 context.modify(shears, components -> components.add(MAX_DAMAGE, CONFIG.ToolsOther.durabilityForShears()));
             }
             else {
-                context.modify(shears, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsOther.unbreakableShears())));
+                context.modify(shears, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
@@ -124,7 +124,7 @@ public class OtherToolItems {
                 context.modify(brush, components -> components.add(MAX_DAMAGE, CONFIG.ToolsOther.durabilityForBrush()));
             }
             else {
-                context.modify(brush, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.ToolsOther.unbreakableBrush())));
+                context.modify(brush, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }

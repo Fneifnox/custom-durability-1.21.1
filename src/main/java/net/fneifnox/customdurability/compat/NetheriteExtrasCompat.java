@@ -1,10 +1,10 @@
 package net.fneifnox.customdurability.compat;
 
 import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
-import net.minecraft.component.type.UnbreakableComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Unit;
 
 import static net.fneifnox.customdurability.CustomDurability.CONFIG;
 import static net.minecraft.component.DataComponentTypes.MAX_DAMAGE;
@@ -20,7 +20,7 @@ public class NetheriteExtrasCompat {
                 context.modify(netheriteAnimalArmor, components -> components.add(MAX_DAMAGE, CONFIG.netheriteExtras.durabilityForNetheriteWolfArmor()));
             }
             else {
-                context.modify(netheriteAnimalArmor, components -> components.add(UNBREAKABLE, new UnbreakableComponent(CONFIG.netheriteExtras.unbreakableNetheriteWolfArmor())));
+                context.modify(netheriteAnimalArmor, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
