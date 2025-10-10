@@ -102,6 +102,51 @@ public class ToolItems {
         });
     }
 
+    public static void setDurabilityAndUnbreakableCopper() {
+        DefaultItemComponentEvents.MODIFY.register(context -> {
+            Item copperSword = Registries.ITEM.get(Identifier.of("minecraft", "copper_sword"));
+            Item copperShovel = Registries.ITEM.get(Identifier.of("minecraft", "copper_shovel"));
+            Item copperPickaxe = Registries.ITEM.get(Identifier.of("minecraft", "copper_pickaxe"));
+            Item copperAxe = Registries.ITEM.get(Identifier.of("minecraft", "copper_axe"));
+            Item copperHoe = Registries.ITEM.get(Identifier.of("minecraft", "copper_hoe"));
+
+            if (!CONFIG.ToolsCopper.unbreakableCopperSword()) {
+                context.modify(copperSword, components -> components.add(MAX_DAMAGE, CONFIG.ToolsCopper.durabilityForCopperSword()));
+            }
+            else {
+                context.modify(copperSword, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+            }
+
+            if (!CONFIG.ToolsCopper.unbreakableCopperShovel()) {
+                context.modify(copperShovel, components -> components.add(MAX_DAMAGE, CONFIG.ToolsCopper.durabilityForCopperShovel()));
+            }
+            else {
+                context.modify(copperShovel, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+            }
+
+            if (!CONFIG.ToolsCopper.unbreakableCopperPickaxe()) {
+                context.modify(copperPickaxe, components -> components.add(MAX_DAMAGE, CONFIG.ToolsCopper.durabilityForCopperPickaxe()));
+            }
+            else {
+                context.modify(copperPickaxe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+            }
+
+            if (!CONFIG.ToolsCopper.unbreakableCopperAxe()) {
+                context.modify(copperAxe, components -> components.add(MAX_DAMAGE, CONFIG.ToolsCopper.durabilityForCopperAxe()));
+            }
+            else {
+                context.modify(copperAxe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+            }
+
+            if (!CONFIG.ToolsCopper.unbreakableCopperHoe()) {
+                context.modify(copperHoe, components -> components.add(MAX_DAMAGE, CONFIG.ToolsCopper.durabilityForCopperHoe()));
+            }
+            else {
+                context.modify(copperHoe, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+            }
+        });
+    }
+
     public static void setDurabilityAndUnbreakableIron() {
         DefaultItemComponentEvents.MODIFY.register(context -> {
             Item ironSword = Registries.ITEM.get(Identifier.of("minecraft", "iron_sword"));

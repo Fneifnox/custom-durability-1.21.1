@@ -48,6 +48,42 @@ public class ArmorItems {
         });
     }
 
+    public static void setDurabilityAndUnbreakableCopper() {
+        DefaultItemComponentEvents.MODIFY.register(context -> {
+            Item copperHelmet = Registries.ITEM.get(Identifier.of("minecraft", "copper_helmet"));
+            Item copperChestplate = Registries.ITEM.get(Identifier.of("minecraft", "copper_chestplate"));
+            Item copperLeggings = Registries.ITEM.get(Identifier.of("minecraft", "copper_leggings"));
+            Item copperBoots = Registries.ITEM.get(Identifier.of("minecraft", "copper_boots"));
+
+            if (!CONFIG.ArmorCopper.unbreakableCopperHelmet()) {
+                context.modify(copperHelmet, components -> components.add(MAX_DAMAGE, CONFIG.ArmorCopper.durabilityForCopperHelmet()));
+            }
+            else {
+                context.modify(copperHelmet, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+            }
+            if (!CONFIG.ArmorCopper.unbreakableCopperChestplate()) {
+                context.modify(copperChestplate, components -> components.add(MAX_DAMAGE, CONFIG.ArmorCopper.durabilityForCopperChestplate()));
+            }
+            else {
+                context.modify(copperChestplate, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+            }
+
+            if (!CONFIG.ArmorCopper.unbreakableCopperLeggings()) {
+                context.modify(copperLeggings, components -> components.add(MAX_DAMAGE, CONFIG.ArmorCopper.durabilityForCopperLeggings()));
+            }
+            else {
+                context.modify(copperLeggings, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+            }
+
+            if (!CONFIG.ArmorCopper.unbreakableCopperBoots()) {
+                context.modify(copperBoots, components -> components.add(MAX_DAMAGE, CONFIG.ArmorCopper.durabilityForCopperBoots()));
+            }
+            else {
+                context.modify(copperBoots, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+            }
+        });
+    }
+
     public static void setDurabilityAndUnbreakableChainmail() {
         DefaultItemComponentEvents.MODIFY.register(context -> {
             Item chainHelmet = Registries.ITEM.get(Identifier.of("minecraft", "chainmail_helmet"));
