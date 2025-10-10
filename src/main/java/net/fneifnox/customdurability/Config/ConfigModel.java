@@ -73,6 +73,37 @@ public class ConfigModel {
         public boolean unbreakableStoneHoe = false;
     }
 
+    @Comment("Default: 190")
+    @Nest
+    public ToolsCopper ToolsCopper = new ToolsCopper();
+    public static class ToolsCopper {
+        @SectionHeader("ToolsCopper Durability")
+
+        @RestartRequired
+        public int durabilityForCopperSword = 190;
+        @RestartRequired
+        public int durabilityForCopperShovel = 190;
+        @RestartRequired
+        public int durabilityForCopperPickaxe = 190;
+        @RestartRequired
+        public int durabilityForCopperAxe = 190;
+        @RestartRequired
+        public int durabilityForCopperHoe = 190;
+
+        @SectionHeader("ToolsCopper Unbreakable")
+
+        @RestartRequired
+        public boolean unbreakableCopperSword = false;
+        @RestartRequired
+        public boolean unbreakableCopperShovel = false;
+        @RestartRequired
+        public boolean unbreakableCopperPickaxe = false;
+        @RestartRequired
+        public boolean unbreakableCopperAxe = false;
+        @RestartRequired
+        public boolean unbreakableCopperHoe = false;
+    }
+
     @Comment("Default: 250")
     @Nest
     public ToolsIron ToolsIron = new ToolsIron();
@@ -282,6 +313,36 @@ public class ConfigModel {
         public boolean unbreakableLeatherLeggings = false;
         @RestartRequired
         public boolean unbreakableLeatherBoots = false;
+    }
+
+    @Nest
+    public ArmorCopper ArmorCopper = new ArmorCopper();
+    public static class ArmorCopper {
+        @SectionHeader("ArmorCopper Durability")
+
+        @RestartRequired
+        @Comment("Default: 121")
+        public int durabilityForCopperHelmet = 121;
+        @RestartRequired
+        @Comment("Default: 176")
+        public int durabilityForCopperChestplate = 176;
+        @RestartRequired
+        @Comment("Default: 165")
+        public int durabilityForCopperLeggings = 165;
+        @RestartRequired
+        @Comment("Default: 143")
+        public int durabilityForCopperBoots = 143;
+
+        @SectionHeader("ArmorCopper Unbreakable")
+
+        @RestartRequired
+        public boolean unbreakableCopperHelmet = false;
+        @RestartRequired
+        public boolean unbreakableCopperChestplate = false;
+        @RestartRequired
+        public boolean unbreakableCopperLeggings = false;
+        @RestartRequired
+        public boolean unbreakableCopperBoots = false;
     }
 
     @Nest

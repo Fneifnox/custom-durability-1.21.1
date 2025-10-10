@@ -7,6 +7,7 @@
 
   "text.config.custom-durability.category.ToolsWooden": "Wooden Tools",
   "text.config.custom-durability.category.ToolsStone": "Stone Tools",
+  "text.config.custom-durability.category.ToolsCopper": "Copper Tools",
   "text.config.custom-durability.category.ToolsIron": "Iron Tools",
   "text.config.custom-durability.category.ToolsGolden": "Golden Tools",
   "text.config.custom-durability.category.ToolsDiamond": "Diamond Tools",
@@ -46,6 +47,23 @@
   "text.config.custom-durability.option.ToolsStone.unbreakableStonePickaxe": "Stone Pickaxe",
   "text.config.custom-durability.option.ToolsStone.unbreakableStoneAxe": "Stone Axe",
   "text.config.custom-durability.option.ToolsStone.unbreakableStoneHoe": "Stone Hoe",
+
+
+  "text.config.custom-durability.section.ToolsCopper Durability": "Durability",
+
+  "text.config.custom-durability.option.ToolsCopper.durabilityForCopperSword": "Copper Sword",
+  "text.config.custom-durability.option.ToolsCopper.durabilityForCopperShovel": "Copper Shovel",
+  "text.config.custom-durability.option.ToolsCopper.durabilityForCopperPickaxe": "Copper Pickaxe",
+  "text.config.custom-durability.option.ToolsCopper.durabilityForCopperAxe": "Copper Axe",
+  "text.config.custom-durability.option.ToolsCopper.durabilityForCopperHoe": "Copper Hoe",
+
+  "text.config.custom-durability.section.ToolsCopper Unbreakable": "Unbreakable",
+
+  "text.config.custom-durability.option.ToolsCopper.unbreakableCopperSword": "Copper Sword",
+  "text.config.custom-durability.option.ToolsCopper.unbreakableCopperShovel": "Copper Shovel",
+  "text.config.custom-durability.option.ToolsCopper.unbreakableCopperPickaxe": "Copper Pickaxe",
+  "text.config.custom-durability.option.ToolsCopper.unbreakableCopperAxe": "Copper Axe",
+  "text.config.custom-durability.option.ToolsCopper.unbreakableCopperHoe": "Copper Hoe",
 
 
   "text.config.custom-durability.section.ToolsIron Durability": "Durability",
@@ -147,6 +165,7 @@
 
 
   "text.config.custom-durability.category.ArmorLeather": "Leather Armor",
+  "text.config.custom-durability.category.ArmorCopper": "Copper Armor",
   "text.config.custom-durability.category.ArmorChainmail": "Chainmail Armor",
   "text.config.custom-durability.category.ArmorIron": "Iron Armor",
   "text.config.custom-durability.category.ArmorGolden": "Golden Armor",
@@ -167,6 +186,21 @@
   "text.config.custom-durability.option.ArmorLeather.unbreakableLeatherChestplate": "Leather Tunic",
   "text.config.custom-durability.option.ArmorLeather.unbreakableLeatherLeggings": "Leather Pan",
   "text.config.custom-durability.option.ArmorLeather.unbreakableLeatherBoots": "Leather Boots",
+
+
+  "text.config.custom-durability.section.ArmorCopper Durability": "Durability",
+
+  "text.config.custom-durability.option.ArmorCopper.durabilityForCopperHelmet": "Copper Helmet",
+  "text.config.custom-durability.option.ArmorCopper.durabilityForCopperChestplate": "Copper Chestplate",
+  "text.config.custom-durability.option.ArmorCopper.durabilityForCopperLeggings": "Copper Leggings",
+  "text.config.custom-durability.option.ArmorCopper.durabilityForCopperBoots": "Copper Boots",
+
+  "text.config.custom-durability.section.ArmorCopper Unbreakable": "Unbreakable",
+
+  "text.config.custom-durability.option.ArmorCopper.unbreakableCopperHelmet": "Copper Helmet",
+  "text.config.custom-durability.option.ArmorCopper.unbreakableCopperChestplate": "Copper Chestplate",
+  "text.config.custom-durability.option.ArmorCopper.unbreakableCopperLeggings": "Copper Leggings",
+  "text.config.custom-durability.option.ArmorCopper.unbreakableCopperBoots": "Copper Boots",
 
 
   "text.config.custom-durability.section.ArmorChainmail Durability": "Durability",

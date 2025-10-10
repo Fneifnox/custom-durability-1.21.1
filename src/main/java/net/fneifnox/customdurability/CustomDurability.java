@@ -27,6 +27,7 @@ public class CustomDurability implements ModInitializer {
 
 		ToolItems.setDurabilityAndUnbreakableWooden();
 		ToolItems.setDurabilityAndUnbreakableStone();
+		ToolItems.setDurabilityAndUnbreakableCopper();
 		ToolItems.setDurabilityAndUnbreakableIron();
 		ToolItems.setDurabilityAndUnbreakableGolden();
 		ToolItems.setDurabilityAndUnbreakableDiamond();
@@ -43,6 +44,7 @@ public class CustomDurability implements ModInitializer {
 		OtherToolItems.setDurabilityAndUnbreakableBrush();
 
 		ArmorItems.setDurabilityAndUnbreakableLeather();
+		ArmorItems.setDurabilityAndUnbreakableCopper();
 		ArmorItems.setDurabilityAndUnbreakableChainmail();
 		ArmorItems.setDurabilityAndUnbreakableIron();
 		ArmorItems.setDurabilityAndUnbreakableGolden();
