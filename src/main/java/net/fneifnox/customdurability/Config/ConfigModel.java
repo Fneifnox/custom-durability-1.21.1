@@ -27,6 +27,8 @@ public class ConfigModel {
         public int durabilityForWoodenAxe = 59;
         @RestartRequired
         public int durabilityForWoodenHoe = 59;
+        @RestartRequired
+        public int durabilityForWoodenSpear = 59;
 
         @SectionHeader("ToolsWooden Unbreakable")
 
@@ -40,6 +42,8 @@ public class ConfigModel {
         public boolean unbreakableWoodenAxe = false;
         @RestartRequired
         public boolean unbreakableWoodenHoe = false;
+        @RestartRequired
+        public boolean unbreakableWoodenSpear = false;
     }
 
     @Comment("Default: 131")
@@ -58,6 +62,8 @@ public class ConfigModel {
         public int durabilityForStoneAxe = 131;
         @RestartRequired
         public int durabilityForStoneHoe = 131;
+        @RestartRequired
+        public int durabilityForStoneSpear = 131;
 
         @SectionHeader("ToolsStone Unbreakable")
 
@@ -71,6 +77,8 @@ public class ConfigModel {
         public boolean unbreakableStoneAxe = false;
         @RestartRequired
         public boolean unbreakableStoneHoe = false;
+        @RestartRequired
+        public boolean unbreakableStoneSpear = false;
     }
 
     @Comment("Default: 190")
@@ -89,6 +97,8 @@ public class ConfigModel {
         public int durabilityForCopperAxe = 190;
         @RestartRequired
         public int durabilityForCopperHoe = 190;
+        @RestartRequired
+        public int durabilityForCopperSpear = 190;
 
         @SectionHeader("ToolsCopper Unbreakable")
 
@@ -102,6 +112,8 @@ public class ConfigModel {
         public boolean unbreakableCopperAxe = false;
         @RestartRequired
         public boolean unbreakableCopperHoe = false;
+        @RestartRequired
+        public boolean unbreakableCopperSpear = false;
     }
 
     @Comment("Default: 250")
@@ -120,6 +132,8 @@ public class ConfigModel {
         public int durabilityForIronAxe = 250;
         @RestartRequired
         public int durabilityForIronHoe = 250;
+        @RestartRequired
+        public int durabilityForIronSpear = 250;
 
         @SectionHeader("ToolsIron Unbreakable")
 
@@ -133,6 +147,8 @@ public class ConfigModel {
         public boolean unbreakableIronAxe = false;
         @RestartRequired
         public boolean unbreakableIronHoe = false;
+        @RestartRequired
+        public boolean unbreakableIronSpear = false;
     }
 
     @Comment("Default: 32")
@@ -151,6 +167,8 @@ public class ConfigModel {
         public int durabilityForGoldenAxe = 32;
         @RestartRequired
         public int durabilityForGoldenHoe = 32;
+        @RestartRequired
+        public int durabilityForGoldenSpear = 32;
 
         @SectionHeader("ToolsGolden Unbreakable")
 
@@ -164,6 +182,8 @@ public class ConfigModel {
         public boolean unbreakableGoldenAxe = false;
         @RestartRequired
         public boolean unbreakableGoldenHoe = false;
+        @RestartRequired
+        public boolean unbreakableGoldenSpear = false;
     }
 
     @Comment("Default: 1561")
@@ -182,6 +202,8 @@ public class ConfigModel {
         public int durabilityForDiamondAxe = 1561;
         @RestartRequired
         public int durabilityForDiamondHoe = 1561;
+        @RestartRequired
+        public int durabilityForDiamondSpear = 1561;
 
         @SectionHeader("ToolsDiamond Unbreakable")
 
@@ -195,6 +217,8 @@ public class ConfigModel {
         public boolean unbreakableDiamondAxe = false;
         @RestartRequired
         public boolean unbreakableDiamondHoe = false;
+        @RestartRequired
+        public boolean unbreakableDiamondSpear = false;
     }
 
     @Comment("Default: 2031")
@@ -213,6 +237,8 @@ public class ConfigModel {
         public int durabilityForNetheriteAxe = 2031;
         @RestartRequired
         public int durabilityForNetheriteHoe = 2031;
+        @RestartRequired
+        public int durabilityForNetheriteSpear = 2031;
 
         @SectionHeader("ToolsNetherite Unbreakable")
 
@@ -226,6 +252,8 @@ public class ConfigModel {
         public boolean unbreakableNetheriteAxe = false;
         @RestartRequired
         public boolean unbreakableNetheriteHoe = false;
+        @RestartRequired
+        public boolean unbreakableNetheriteSpear = false;
     }
 
     @Nest
