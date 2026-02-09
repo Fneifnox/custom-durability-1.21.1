@@ -22,6 +22,7 @@
   "text.config.custom-durability.option.ToolsWooden.durabilityForWoodenPickaxe": "Wooden Pickaxe",
   "text.config.custom-durability.option.ToolsWooden.durabilityForWoodenAxe": "Wooden Axe",
   "text.config.custom-durability.option.ToolsWooden.durabilityForWoodenHoe": "Wooden Hoe",
+  "text.config.custom-durability.option.ToolsWooden.durabilityForWoodenSpear": "Wooden Spear",
 
   "text.config.custom-durability.section.ToolsWooden Unbreakable": "Unbreakable",
 
@@ -30,6 +31,7 @@
   "text.config.custom-durability.option.ToolsWooden.unbreakableWoodenPickaxe": "Wooden Pickaxe",
   "text.config.custom-durability.option.ToolsWooden.unbreakableWoodenAxe": "Wooden Axe",
   "text.config.custom-durability.option.ToolsWooden.unbreakableWoodenHoe": "Wooden Hoe",
+  "text.config.custom-durability.option.ToolsWooden.unbreakableWoodenSpear": "Wooden Spear",
 
 
   "text.config.custom-durability.section.ToolsStone Durability": "Durability",
@@ -39,6 +41,7 @@
   "text.config.custom-durability.option.ToolsStone.durabilityForStonePickaxe": "Stone Pickaxe",
   "text.config.custom-durability.option.ToolsStone.durabilityForStoneAxe": "Stone Axe",
   "text.config.custom-durability.option.ToolsStone.durabilityForStoneHoe": "Stone Hoe",
+  "text.config.custom-durability.option.ToolsStone.durabilityForStoneSpear": "Stone Spear",
 
   "text.config.custom-durability.section.ToolsStone Unbreakable": "Unbreakable",
 
@@ -47,6 +50,7 @@
   "text.config.custom-durability.option.ToolsStone.unbreakableStonePickaxe": "Stone Pickaxe",
   "text.config.custom-durability.option.ToolsStone.unbreakableStoneAxe": "Stone Axe",
   "text.config.custom-durability.option.ToolsStone.unbreakableStoneHoe": "Stone Hoe",
+  "text.config.custom-durability.option.ToolsStone.unbreakableStoneSpear": "Stone Spear",
 
 
   "text.config.custom-durability.section.ToolsCopper Durability": "Durability",
@@ -56,6 +60,7 @@
   "text.config.custom-durability.option.ToolsCopper.durabilityForCopperPickaxe": "Copper Pickaxe",
   "text.config.custom-durability.option.ToolsCopper.durabilityForCopperAxe": "Copper Axe",
   "text.config.custom-durability.option.ToolsCopper.durabilityForCopperHoe": "Copper Hoe",
+  "text.config.custom-durability.option.ToolsCopper.durabilityForCopperSpear": "Copper Spear",
 
   "text.config.custom-durability.section.ToolsCopper Unbreakable": "Unbreakable",
 
@@ -64,6 +69,7 @@
   "text.config.custom-durability.option.ToolsCopper.unbreakableCopperPickaxe": "Copper Pickaxe",
   "text.config.custom-durability.option.ToolsCopper.unbreakableCopperAxe": "Copper Axe",
   "text.config.custom-durability.option.ToolsCopper.unbreakableCopperHoe": "Copper Hoe",
+  "text.config.custom-durability.option.ToolsCopper.unbreakableCopperSpear": "Copper Spear",
 
 
   "text.config.custom-durability.section.ToolsIron Durability": "Durability",
@@ -73,6 +79,7 @@
   "text.config.custom-durability.option.ToolsIron.durabilityForIronPickaxe": "Iron Pickaxe",
   "text.config.custom-durability.option.ToolsIron.durabilityForIronAxe": "Iron Axe",
   "text.config.custom-durability.option.ToolsIron.durabilityForIronHoe": "Iron Hoe",
+  "text.config.custom-durability.option.ToolsIron.durabilityForIronSpear": "Iron Spear",
 
   "text.config.custom-durability.section.ToolsIron Unbreakable": "Unbreakable",
 
@@ -81,6 +88,7 @@
   "text.config.custom-durability.option.ToolsIron.unbreakableIronPickaxe": "Iron Pickaxe",
   "text.config.custom-durability.option.ToolsIron.unbreakableIronAxe": "Iron Axe",
   "text.config.custom-durability.option.ToolsIron.unbreakableIronHoe": "Iron Hoe",
+  "text.config.custom-durability.option.ToolsIron.unbreakableIronSpear": "Iron Spear",
 
 
   "text.config.custom-durability.section.ToolsGolden Durability": "Durability",
@@ -90,6 +98,7 @@
   "text.config.custom-durability.option.ToolsGolden.durabilityForGoldenPickaxe": "Golden Pickaxe",
   "text.config.custom-durability.option.ToolsGolden.durabilityForGoldenAxe": "Golden Axe",
   "text.config.custom-durability.option.ToolsGolden.durabilityForGoldenHoe": "Golden Hoe",
+  "text.config.custom-durability.option.ToolsGolden.durabilityForGoldenSpear": "Golden Spear",
 
   "text.config.custom-durability.section.ToolsGolden Unbreakable": "Unbreakable",
 
@@ -98,6 +107,7 @@
   "text.config.custom-durability.option.ToolsGolden.unbreakableGoldenPickaxe": "Golden Pickaxe",
   "text.config.custom-durability.option.ToolsGolden.unbreakableGoldenAxe": "Golden Axe",
   "text.config.custom-durability.option.ToolsGolden.unbreakableGoldenHoe": "Golden Hoe",
+  "text.config.custom-durability.option.ToolsGolden.unbreakableGoldenSpear": "Golden Spear",
 
 
   "text.config.custom-durability.section.ToolsDiamond Durability": "Durability",
@@ -107,6 +117,7 @@
   "text.config.custom-durability.option.ToolsDiamond.durabilityForDiamondPickaxe": "Diamond Pickaxe",
   "text.config.custom-durability.option.ToolsDiamond.durabilityForDiamondAxe": "Diamond Axe",
   "text.config.custom-durability.option.ToolsDiamond.durabilityForDiamondHoe": "Diamond Hoe",
+  "text.config.custom-durability.option.ToolsDiamond.durabilityForDiamondSpear": "Diamond Spear",
 
   "text.config.custom-durability.section.ToolsDiamond Unbreakable": "Unbreakable",
 
@@ -115,6 +126,7 @@
   "text.config.custom-durability.option.ToolsDiamond.unbreakableDiamondPickaxe": "Diamond Pickaxe",
   "text.config.custom-durability.option.ToolsDiamond.unbreakableDiamondAxe": "Diamond Axe",
   "text.config.custom-durability.option.ToolsDiamond.unbreakableDiamondHoe": "Diamond Hoe",
+  "text.config.custom-durability.option.ToolsDiamond.unbreakableDiamondSpear": "Diamond Spear",
 
 
   "text.config.custom-durability.section.ToolsNetherite Durability": "Durability",
@@ -124,6 +136,7 @@
   "text.config.custom-durability.option.ToolsNetherite.durabilityForNetheritePickaxe": "Netherite Pickaxe",
   "text.config.custom-durability.option.ToolsNetherite.durabilityForNetheriteAxe": "Netherite Axe",
   "text.config.custom-durability.option.ToolsNetherite.durabilityForNetheriteHoe": "Netherite Hoe",
+  "text.config.custom-durability.option.ToolsNetherite.durabilityForNetheriteSpear": "Netherite Spear",
 
   "text.config.custom-durability.section.ToolsNetherite Unbreakable": "Unbreakable",
 
@@ -132,6 +145,7 @@
   "text.config.custom-durability.option.ToolsNetherite.unbreakableNetheritePickaxe": "Netherite Pickaxe",
   "text.config.custom-durability.option.ToolsNetherite.unbreakableNetheriteAxe": "Netherite Axe",
   "text.config.custom-durability.option.ToolsNetherite.unbreakableNetheriteHoe": "Netherite Hoe",
+  "text.config.custom-durability.option.ToolsNetherite.unbreakableNetheriteSpear": "Netherite Spear",
 
 
   "text.config.custom-durability.section.ToolsOther Durability": "Durability",
