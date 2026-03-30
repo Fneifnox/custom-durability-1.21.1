@@ -809,4 +809,137 @@ public class ConfigModel {
         @RestartRequired
         public boolean unbreakableWarpStone = false;
     }
+    // ─── Tough As Nails ──────────────────────────────────────────────────────────
+
+    @Nest
+    public ToughAsNails toughAsNails = new ToughAsNails();
+    public static class ToughAsNails {
+        @RestartRequired
+        public boolean enableToughAsNails = true;
+
+        // ── Leaf Armor ──
+        @SectionHeader("Leaf Armor Durability")
+        @RestartRequired @Comment("Default: 55")  public int durabilityForLeafHelmet      = 55;
+        @RestartRequired @Comment("Default: 80")  public int durabilityForLeafChestplate  = 80;
+        @RestartRequired @Comment("Default: 75")  public int durabilityForLeafLeggings    = 75;
+        @RestartRequired @Comment("Default: 65")  public int durabilityForLeafBoots       = 65;
+
+        @SectionHeader("Leaf Armor Unbreakable")
+        @RestartRequired public boolean unbreakableLeafHelmet     = false;
+        @RestartRequired public boolean unbreakableLeafChestplate = false;
+        @RestartRequired public boolean unbreakableLeafLeggings   = false;
+        @RestartRequired public boolean unbreakableLeafBoots      = false;
+
+        // ── Wool Armor ──
+        @SectionHeader("Wool Armor Durability")
+        @RestartRequired @Comment("Default: 55")  public int durabilityForWoolHelmet      = 55;
+        @RestartRequired @Comment("Default: 80")  public int durabilityForWoolChestplate  = 80;
+        @RestartRequired @Comment("Default: 75")  public int durabilityForWoolLeggings    = 75;
+        @RestartRequired @Comment("Default: 65")  public int durabilityForWoolBoots       = 65;
+
+        @SectionHeader("Wool Armor Unbreakable")
+        @RestartRequired public boolean unbreakableWoolHelmet     = false;
+        @RestartRequired public boolean unbreakableWoolChestplate = false;
+        @RestartRequired public boolean unbreakableWoolLeggings   = false;
+        @RestartRequired public boolean unbreakableWoolBoots      = false;
+
+        // ── Canteens (per material tier; applies to dirty, purified, and plain variants) ──
+        @SectionHeader("Canteen Durability")
+        @RestartRequired @Comment("Default: 5")   public int durabilityForLeatherCanteen  = 5;
+        @RestartRequired @Comment("Default: 6")   public int durabilityForCopperCanteen   = 6;
+        @RestartRequired @Comment("Default: 7")   public int durabilityForIronCanteen     = 7;
+        @RestartRequired @Comment("Default: 10")  public int durabilityForGoldCanteen     = 10;
+        @RestartRequired @Comment("Default: 15")  public int durabilityForDiamondCanteen  = 15;
+        @RestartRequired @Comment("Default: 25")  public int durabilityForNetheriteCanteen= 25;
+
+        @SectionHeader("Canteen Unbreakable")
+        @RestartRequired public boolean unbreakableLeatherCanteen  = false;
+        @RestartRequired public boolean unbreakableCopperCanteen   = false;
+        @RestartRequired public boolean unbreakableIronCanteen     = false;
+        @RestartRequired public boolean unbreakableGoldCanteen     = false;
+        @RestartRequired public boolean unbreakableDiamondCanteen  = false;
+        @RestartRequired public boolean unbreakableNetheriteCanteen= false;
+    }
+
+    // ─── Farmer's Delight ────────────────────────────────────────────────────────
+
+    @Nest
+    public FarmersDelight farmersDelight = new FarmersDelight();
+    public static class FarmersDelight {
+        @RestartRequired
+        public boolean enableFarmersDelight = true;
+
+        @SectionHeader("Knife Durability")
+        @RestartRequired @Comment("Default: 131")   public int durabilityForFlintKnife    = 131;
+        @RestartRequired @Comment("Default: 190")  public int durabilityForCopperKnife   = 190;
+        @RestartRequired @Comment("Default: 250")  public int durabilityForIronKnife     = 250;
+        @RestartRequired @Comment("Default: 32")   public int durabilityForGoldenKnife   = 32;
+        @RestartRequired @Comment("Default: 1561") public int durabilityForDiamondKnife  = 1561;
+        @RestartRequired @Comment("Default: 2031") public int durabilityForNetheriteKnife= 2031;
+
+        @SectionHeader("Knife Unbreakable")
+        @RestartRequired public boolean unbreakableFlintKnife     = false;
+        @RestartRequired public boolean unbreakableCopperKnife    = false;
+        @RestartRequired public boolean unbreakableIronKnife      = false;
+        @RestartRequired public boolean unbreakableGoldenKnife    = false;
+        @RestartRequired public boolean unbreakableDiamondKnife   = false;
+        @RestartRequired public boolean unbreakableNetheriteKnife = false;
+    }
+
+    // ─── More Delight ────────────────────────────────────────────────────────────
+
+    @Nest
+    public MoreDelight moreDelight = new MoreDelight();
+    public static class MoreDelight {
+        @RestartRequired
+        public boolean enableMoreDelight = true;
+
+        @SectionHeader("Knife Durability")
+        @RestartRequired @Comment("Default: 59")  public int durabilityForWoodenKnife = 59;
+        @RestartRequired @Comment("Default: 131") public int durabilityForStoneKnife  = 131;
+
+        @SectionHeader("Knife Unbreakable")
+        @RestartRequired public boolean unbreakableWoodenKnife = false;
+        @RestartRequired public boolean unbreakableStoneKnife  = false;
+    }
+
+    // ─── Late Game Plus ──────────────────────────────────────────────────────────
+
+    @Nest
+    public LateGamePlus lateGamePlus = new LateGamePlus();
+    public static class LateGamePlus {
+        @RestartRequired
+        public boolean enableLateGamePlus = true;
+
+        @SectionHeader("Late Game Plus Durability")
+        @RestartRequired @Comment("Default: 500") public int durabilityForNetheriteBow      = 500;
+        @RestartRequired @Comment("Default: 700") public int durabilityForNetheriteCrossbow  = 700;
+        @RestartRequired @Comment("Default: 648") public int durabilityForNetheriteElytra    = 648;
+        @RestartRequired @Comment("Default: 256")  public int durabilityForNetheriteFishingRod= 256;
+        @RestartRequired @Comment("Default: 128")  public int durabilityForNetheriteWolfArmor2= 128;
+
+        @SectionHeader("Late Game Plus Unbreakable")
+        @RestartRequired public boolean unbreakableNetheriteBow       = false;
+        @RestartRequired public boolean unbreakableNetheriteCrossbow  = false;
+        @RestartRequired public boolean unbreakableNetheriteElytra    = false;
+        @RestartRequired public boolean unbreakableNetheriteFishingRod= false;
+        @RestartRequired public boolean unbreakableNetheriteWolfArmor2= false;
+    }
+    // ─── Illager Invasion ─────────────────────────────────────────────────────────
+
+    @Nest
+    public IllagerInvasion illagerInvasion = new IllagerInvasion();
+    public static class IllagerInvasion {
+        @RestartRequired
+        public boolean enableIllagerInvasion = true;
+
+        @SectionHeader("Illager Invasion Durability")
+        @RestartRequired
+        @Comment("Default: 327")
+        public int durabilityForPlatinumInfusedHatchet = 327;
+
+        @SectionHeader("Illager Invasion Unbreakable")
+        @RestartRequired
+        public boolean unbreakablePlatinumInfusedHatchet = false;
+    }
 }
