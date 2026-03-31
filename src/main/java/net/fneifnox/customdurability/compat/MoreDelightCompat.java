@@ -15,7 +15,7 @@ public class MoreDelightCompat {
     public static void setDurabilityAndUnbreakableKnives() {
         DefaultItemComponentEvents.MODIFY.register(context -> {
             Item woodenKnife = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("moredelight", "wooden_knife"));
-            Item stoneKnife  = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("moredelight", "stone_knife"));
+            Item stoneKnife = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("moredelight", "stone_knife"));
 
             if (!CONFIG.moreDelight.unbreakableWoodenKnife()) {
                 context.modify(woodenKnife, components -> components.set(MAX_DAMAGE, CONFIG.moreDelight.durabilityForWoodenKnife()));

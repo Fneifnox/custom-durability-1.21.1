@@ -50,8 +50,7 @@ public class CustomDurability implements ModInitializer {
         OtherArmorItems.setDurabilityAndUnbreakableWolfArmor();
 
         // ── Advanced Netherite ────────────────────────────────────────────────
-        if (FabricLoader.getInstance().isModLoaded("advancednetherite")
-                && CONFIG.advancedNetherite.enableAdvancedNetherite()) {
+        if (FabricLoader.getInstance().isModLoaded("advancednetherite") && CONFIG.advancedNetherite.enableAdvancedNetherite()) {
             AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteIronTools();
             AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteGoldTools();
             AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteEmeraldTools();
@@ -62,47 +61,41 @@ public class CustomDurability implements ModInitializer {
             AdvancedNetheriteCompat.setDurabilityAndUnbreakableNetheriteDiamondArmor();
         }
 
+        // ── Farmer's Delight ──────────────────────────────────────────────────
+        if (FabricLoader.getInstance().isModLoaded("farmersdelight") && CONFIG.farmersDelight.enableFarmersDelight()) {
+            FarmersDelightCompat.setDurabilityAndUnbreakableKnives();
+        }
+
+        // ── Illager Invasion ──────────────────────────────────────────────────────
+        if (FabricLoader.getInstance().isModLoaded("illagerinvasion") && CONFIG.illagerInvasion.enableIllagerInvasion()) {
+            IllagerInvasionCompat.setDurabilityAndUnbreakablePlatinumInfusedHatchet();
+        }
+
+        // ── Late Game Plus ────────────────────────────────────────────────────
+        if (FabricLoader.getInstance().isModLoaded("lategameplus") && CONFIG.lateGamePlus.enableLateGamePlus()) {
+            LateGamePlusCompat.setDurabilityAndUnbreakableItems();
+        }
+
+        // ── More Delight ──────────────────────────────────────────────────────
+        if (FabricLoader.getInstance().isModLoaded("moredelight") && CONFIG.moreDelight.enableMoreDelight()) {
+            MoreDelightCompat.setDurabilityAndUnbreakableKnives();
+        }
+
         // ── Netherite Extras ──────────────────────────────────────────────────
-        if (FabricLoader.getInstance().isModLoaded("netheriteextras")
-                && CONFIG.netheriteExtras.enableNetheriteExtras()) {
+        if (FabricLoader.getInstance().isModLoaded("netheriteextras") && CONFIG.netheriteExtras.enableNetheriteExtras()) {
             NetheriteExtrasCompat.setDurabilityAndUnbreakableNetheriteWolfArmor();
         }
 
-        // ── Waystones ─────────────────────────────────────────────────────────
-        if (FabricLoader.getInstance().isModLoaded("waystones")
-                && CONFIG.waystones.enableWaystones()) {
-            WaystonesCompat.setDurabilityAndUnbreakableWarpStone();
-        }
-
         // ── Tough As Nails ────────────────────────────────────────────────────
-        if (FabricLoader.getInstance().isModLoaded("toughasnails")
-                && CONFIG.toughAsNails.enableToughAsNails()) {
+        if (FabricLoader.getInstance().isModLoaded("toughasnails") && CONFIG.toughAsNails.enableToughAsNails()) {
             ToughAsNailsCompat.setDurabilityAndUnbreakableLeafArmor();
             ToughAsNailsCompat.setDurabilityAndUnbreakableWoolArmor();
             ToughAsNailsCompat.setDurabilityAndUnbreakableCanteens();
         }
 
-        // ── Farmer's Delight ──────────────────────────────────────────────────
-        if (FabricLoader.getInstance().isModLoaded("farmersdelight")
-                && CONFIG.farmersDelight.enableFarmersDelight()) {
-            FarmersDelightCompat.setDurabilityAndUnbreakableKnives();
-        }
-
-        // ── More Delight ──────────────────────────────────────────────────────
-        if (FabricLoader.getInstance().isModLoaded("moredelight")
-                && CONFIG.moreDelight.enableMoreDelight()) {
-            MoreDelightCompat.setDurabilityAndUnbreakableKnives();
-        }
-
-        // ── Late Game Plus ────────────────────────────────────────────────────
-        if (FabricLoader.getInstance().isModLoaded("lategameplus")
-                && CONFIG.lateGamePlus.enableLateGamePlus()) {
-            LateGamePlusCompat.setDurabilityAndUnbreakableItems();
-        }
-        // ── Illager Invasion ──────────────────────────────────────────────────────
-        if (FabricLoader.getInstance().isModLoaded("illagerinvasion")
-                && CONFIG.illagerInvasion.enableIllagerInvasion()) {
-            IllagerInvasionCompat.setDurabilityAndUnbreakablePlatinumInfusedHatchet();
+        // ── Waystones ─────────────────────────────────────────────────────────
+        if (FabricLoader.getInstance().isModLoaded("waystones") && CONFIG.waystones.enableWaystones()) {
+            WaystonesCompat.setDurabilityAndUnbreakableWarpStone();
         }
     }
 
