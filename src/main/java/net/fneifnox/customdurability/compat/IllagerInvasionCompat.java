@@ -14,12 +14,12 @@ public class IllagerInvasionCompat {
 
     public static void setDurabilityAndUnbreakablePlatinumInfusedHatchet() {
         DefaultItemComponentEvents.MODIFY.register(context -> {
-            Item hatchet = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("illagerinvasion", "platinum_infused_hatchet"));
+            Item platinumInfusedHatchet = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("illagerinvasion", "platinum_infused_hatchet"));
 
             if (!CONFIG.illagerInvasion.unbreakablePlatinumInfusedHatchet()) {
-                context.modify(hatchet, components -> components.set(MAX_DAMAGE, CONFIG.illagerInvasion.durabilityForPlatinumInfusedHatchet()));
+                context.modify(platinumInfusedHatchet, components -> components.set(MAX_DAMAGE, CONFIG.illagerInvasion.durabilityForPlatinumInfusedHatchet()));
             } else {
-                context.modify(hatchet, components -> components.set(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(platinumInfusedHatchet, components -> components.set(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
