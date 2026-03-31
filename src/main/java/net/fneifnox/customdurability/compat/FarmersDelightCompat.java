@@ -14,11 +14,11 @@ public class FarmersDelightCompat {
 
     public static void setDurabilityAndUnbreakableKnives() {
         DefaultItemComponentEvents.MODIFY.register(context -> {
-            Item flintKnife     = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "flint_knife"));
-            Item copperKnife    = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "copper_knife"));
-            Item ironKnife      = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "iron_knife"));
-            Item goldenKnife    = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "golden_knife"));
-            Item diamondKnife   = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "diamond_knife"));
+            Item flintKnife = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "flint_knife"));
+            Item copperKnife = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "copper_knife"));
+            Item ironKnife = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "iron_knife"));
+            Item goldenKnife = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "golden_knife"));
+            Item diamondKnife = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "diamond_knife"));
             Item netheriteKnife = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("farmersdelight", "netherite_knife"));
 
             if (!CONFIG.farmersDelight.unbreakableFlintKnife()) {
