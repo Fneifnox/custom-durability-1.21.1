@@ -450,58 +450,14 @@
   "text.config.custom-durability.option.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondLeggings": "Netherite-Diamond Leggings",
   "text.config.custom-durability.option.advancedNetherite.netheriteDiamondArmor.unbreakableNetheriteDiamondBoots": "Netherite-Diamond Boots",
 
-  "text.config.custom-durability.category.toughAsNails": "Tough As Nails",
-
-  "text.config.custom-durability.option.toughAsNails.enableToughAsNails": "Enabled",
-
-  "text.config.custom-durability.section.Leaf Armor Durability": "Durability",
-  "text.config.custom-durability.section.Leaf Armor Unbreakable": "Unbreakable",
-
-  "text.config.custom-durability.option.toughAsNails.durabilityForLeafHelmet": "Leaf Helmet",
-  "text.config.custom-durability.option.toughAsNails.durabilityForLeafChestplate": "Leaf Chestplate",
-  "text.config.custom-durability.option.toughAsNails.durabilityForLeafLeggings": "Leaf Leggings",
-  "text.config.custom-durability.option.toughAsNails.durabilityForLeafBoots": "Leaf Boots",
-  "text.config.custom-durability.option.toughAsNails.unbreakableLeafHelmet": "Leaf Helmet",
-  "text.config.custom-durability.option.toughAsNails.unbreakableLeafChestplate": "Leaf Chestplate",
-  "text.config.custom-durability.option.toughAsNails.unbreakableLeafLeggings": "Leaf Leggings",
-  "text.config.custom-durability.option.toughAsNails.unbreakableLeafBoots": "Leaf Boots",
-
-  "text.config.custom-durability.section.Wool Armor Durability": "Durability",
-  "text.config.custom-durability.section.Wool Armor Unbreakable": "Unbreakable",
-
-  "text.config.custom-durability.option.toughAsNails.durabilityForWoolHelmet": "Wool Helmet",
-  "text.config.custom-durability.option.toughAsNails.durabilityForWoolChestplate": "Wool Chestplate",
-  "text.config.custom-durability.option.toughAsNails.durabilityForWoolLeggings": "Wool Leggings",
-  "text.config.custom-durability.option.toughAsNails.durabilityForWoolBoots": "Wool Boots",
-  "text.config.custom-durability.option.toughAsNails.unbreakableWoolHelmet": "Wool Helmet",
-  "text.config.custom-durability.option.toughAsNails.unbreakableWoolChestplate": "Wool Chestplate",
-  "text.config.custom-durability.option.toughAsNails.unbreakableWoolLeggings": "Wool Leggings",
-  "text.config.custom-durability.option.toughAsNails.unbreakableWoolBoots": "Wool Boots",
-
-  "text.config.custom-durability.section.Canteen Durability": "Durability",
-  "text.config.custom-durability.section.Canteen Unbreakable": "Unbreakable",
-
-  "text.config.custom-durability.option.toughAsNails.durabilityForLeatherCanteen": "Leather Canteen",
-  "text.config.custom-durability.option.toughAsNails.durabilityForCopperCanteen": "Copper Canteen",
-  "text.config.custom-durability.option.toughAsNails.durabilityForIronCanteen": "Iron Canteen",
-  "text.config.custom-durability.option.toughAsNails.durabilityForGoldCanteen": "Gold Canteen",
-  "text.config.custom-durability.option.toughAsNails.durabilityForDiamondCanteen": "Diamond Canteen",
-  "text.config.custom-durability.option.toughAsNails.durabilityForNetheriteCanteen": "Netherite Canteen",
-  "text.config.custom-durability.option.toughAsNails.unbreakableLeatherCanteen": "Leather Canteen",
-  "text.config.custom-durability.option.toughAsNails.unbreakableCopperCanteen": "Copper Canteen",
-  "text.config.custom-durability.option.toughAsNails.unbreakableIronCanteen": "Iron Canteen",
-  "text.config.custom-durability.option.toughAsNails.unbreakableGoldCanteen": "Gold Canteen",
-  "text.config.custom-durability.option.toughAsNails.unbreakableDiamondCanteen": "Diamond Canteen",
-  "text.config.custom-durability.option.toughAsNails.unbreakableNetheriteCanteen": "Netherite Canteen",
-
 
 
   "text.config.custom-durability.category.farmersDelight": "Farmer's Delight",
 
   "text.config.custom-durability.option.farmersDelight.enableFarmersDelight": "Enabled",
 
-  "text.config.custom-durability.section.Knife Durability": "Durability",
-  "text.config.custom-durability.section.Knife Unbreakable": "Unbreakable",
+  "text.config.custom-durability.section.Durability Knife": "Durability",
+  "text.config.custom-durability.section.Unbreakable Knife": "Unbreakable",
 
   "text.config.custom-durability.option.farmersDelight.durabilityForFlintKnife": "Flint Knife",
   "text.config.custom-durability.option.farmersDelight.durabilityForCopperKnife": "Copper Knife",
@@ -518,6 +474,38 @@
 
 
 
+  "text.config.custom-durability.category.illagerInvasion": "Illager Invasion",
+
+  "text.config.custom-durability.option.illagerInvasion.enableIllagerInvasion": "Enabled",
+
+  "text.config.custom-durability.section.Durability PlatinumInfusedHatchet": "Durability",
+  "text.config.custom-durability.section.Unbreakable PlatinumInfusedHatchet": "Unbreakable",
+
+  "text.config.custom-durability.option.illagerInvasion.durabilityForPlatinumInfusedHatchet": "Platinum Infused Hatchet",
+  "text.config.custom-durability.option.illagerInvasion.unbreakablePlatinumInfusedHatchet": "Platinum Infused Hatchet",
+
+
+
+  "text.config.custom-durability.category.lateGamePlus": "Late Game Plus",
+
+  "text.config.custom-durability.option.lateGamePlus.enableLateGamePlus": "Enabled",
+
+  "text.config.custom-durability.section.Durability LateGamePlus": "Durability",
+  "text.config.custom-durability.section.Unbreakable LateGamePlus": "Unbreakable",
+
+  "text.config.custom-durability.option.lateGamePlus.durabilityForNetheriteBow": "Netherite Bow",
+  "text.config.custom-durability.option.lateGamePlus.durabilityForNetheriteCrossbow": "Netherite Crossbow",
+  "text.config.custom-durability.option.lateGamePlus.durabilityForNetheriteElytra": "Netherite Elytra",
+  "text.config.custom-durability.option.lateGamePlus.durabilityForNetheriteFishingRod": "Netherite Fishing Rod",
+  "text.config.custom-durability.option.lateGamePlus.durabilityForNetheriteWolfArmor": "Netherite Wolf Armor",
+  "text.config.custom-durability.option.lateGamePlus.unbreakableNetheriteBow": "Netherite Bow",
+  "text.config.custom-durability.option.lateGamePlus.unbreakableNetheriteCrossbow": "Netherite Crossbow",
+  "text.config.custom-durability.option.lateGamePlus.unbreakableNetheriteElytra": "Netherite Elytra",
+  "text.config.custom-durability.option.lateGamePlus.unbreakableNetheriteFishingRod": "Netherite Fishing Rod",
+  "text.config.custom-durability.option.lateGamePlus.unbreakableNetheriteWolfArmor": "Netherite Wolf Armor",
+
+
+
   "text.config.custom-durability.category.moreDelight": "More Delight",
 
   "text.config.custom-durability.option.moreDelight.enableMoreDelight": "Enabled",
@@ -529,33 +517,47 @@
 
 
 
-  "text.config.custom-durability.category.lateGamePlus": "Late Game Plus",
+  "text.config.custom-durability.category.toughAsNails": "Tough As Nails",
 
-  "text.config.custom-durability.option.lateGamePlus.enableLateGamePlus": "Enabled",
+  "text.config.custom-durability.option.toughAsNails.enableToughAsNails": "Enabled",
 
-  "text.config.custom-durability.section.Late Game Plus Durability": "Durability",
-  "text.config.custom-durability.section.Late Game Plus Unbreakable": "Unbreakable",
+  "text.config.custom-durability.section.Durability LeafArmor": "Durability",
+  "text.config.custom-durability.section.Unbreakable LeafArmor": "Unbreakable",
 
-  "text.config.custom-durability.option.lateGamePlus.durabilityForNetheriteBow": "Netherite Bow",
-  "text.config.custom-durability.option.lateGamePlus.durabilityForNetheriteCrossbow": "Netherite Crossbow",
-  "text.config.custom-durability.option.lateGamePlus.durabilityForNetheriteElytra": "Netherite Elytra",
-  "text.config.custom-durability.option.lateGamePlus.durabilityForNetheriteFishingRod": "Netherite Fishing Rod",
-  "text.config.custom-durability.option.lateGamePlus.durabilityForNetheriteWolfArmor2": "Netherite Wolf Armor",
-  "text.config.custom-durability.option.lateGamePlus.unbreakableNetheriteBow": "Netherite Bow",
-  "text.config.custom-durability.option.lateGamePlus.unbreakableNetheriteCrossbow": "Netherite Crossbow",
-  "text.config.custom-durability.option.lateGamePlus.unbreakableNetheriteElytra": "Netherite Elytra",
-  "text.config.custom-durability.option.lateGamePlus.unbreakableNetheriteFishingRod": "Netherite Fishing Rod",
-  "text.config.custom-durability.option.lateGamePlus.unbreakableNetheriteWolfArmor2": "Netherite Wolf Armor",
+  "text.config.custom-durability.option.toughAsNails.durabilityForLeafHelmet": "Leaf Helmet",
+  "text.config.custom-durability.option.toughAsNails.durabilityForLeafChestplate": "Leaf Chestplate",
+  "text.config.custom-durability.option.toughAsNails.durabilityForLeafLeggings": "Leaf Leggings",
+  "text.config.custom-durability.option.toughAsNails.durabilityForLeafBoots": "Leaf Boots",
+  "text.config.custom-durability.option.toughAsNails.unbreakableLeafHelmet": "Leaf Helmet",
+  "text.config.custom-durability.option.toughAsNails.unbreakableLeafChestplate": "Leaf Chestplate",
+  "text.config.custom-durability.option.toughAsNails.unbreakableLeafLeggings": "Leaf Leggings",
+  "text.config.custom-durability.option.toughAsNails.unbreakableLeafBoots": "Leaf Boots",
 
-  
+  "text.config.custom-durability.section.Durability WoolArmor": "Durability",
+  "text.config.custom-durability.section.Unbreakable WoolArmor": "Unbreakable",
 
-  "text.config.custom-durability.category.illagerInvasion": "Illager Invasion",
+  "text.config.custom-durability.option.toughAsNails.durabilityForWoolHelmet": "Wool Helmet",
+  "text.config.custom-durability.option.toughAsNails.durabilityForWoolChestplate": "Wool Chestplate",
+  "text.config.custom-durability.option.toughAsNails.durabilityForWoolLeggings": "Wool Leggings",
+  "text.config.custom-durability.option.toughAsNails.durabilityForWoolBoots": "Wool Boots",
+  "text.config.custom-durability.option.toughAsNails.unbreakableWoolHelmet": "Wool Helmet",
+  "text.config.custom-durability.option.toughAsNails.unbreakableWoolChestplate": "Wool Chestplate",
+  "text.config.custom-durability.option.toughAsNails.unbreakableWoolLeggings": "Wool Leggings",
+  "text.config.custom-durability.option.toughAsNails.unbreakableWoolBoots": "Wool Boots",
 
-  "text.config.custom-durability.option.illagerInvasion.enableIllagerInvasion": "Enabled",
+  "text.config.custom-durability.section.Durability Canteens": "Durability",
+  "text.config.custom-durability.section.Unbreakable Canteens": "Unbreakable",
 
-  "text.config.custom-durability.section.Illager Invasion Durability": "Durability",
-  "text.config.custom-durability.section.Illager Invasion Unbreakable": "Unbreakable",
-
-  "text.config.custom-durability.option.illagerInvasion.durabilityForPlatinumInfusedHatchet": "Platinum Infused Hatchet",
-  "text.config.custom-durability.option.illagerInvasion.unbreakablePlatinumInfusedHatchet": "Platinum Infused Hatchet"
+  "text.config.custom-durability.option.toughAsNails.durabilityForLeatherCanteen": "Leather Canteen",
+  "text.config.custom-durability.option.toughAsNails.durabilityForCopperCanteen": "Copper Canteen",
+  "text.config.custom-durability.option.toughAsNails.durabilityForIronCanteen": "Iron Canteen",
+  "text.config.custom-durability.option.toughAsNails.durabilityForGoldCanteen": "Gold Canteen",
+  "text.config.custom-durability.option.toughAsNails.durabilityForDiamondCanteen": "Diamond Canteen",
+  "text.config.custom-durability.option.toughAsNails.durabilityForNetheriteCanteen": "Netherite Canteen",
+  "text.config.custom-durability.option.toughAsNails.unbreakableLeatherCanteen": "Leather Canteen",
+  "text.config.custom-durability.option.toughAsNails.unbreakableCopperCanteen": "Copper Canteen",
+  "text.config.custom-durability.option.toughAsNails.unbreakableIronCanteen": "Iron Canteen",
+  "text.config.custom-durability.option.toughAsNails.unbreakableGoldCanteen": "Gold Canteen",
+  "text.config.custom-durability.option.toughAsNails.unbreakableDiamondCanteen": "Diamond Canteen",
+  "text.config.custom-durability.option.toughAsNails.unbreakableNetheriteCanteen": "Netherite Canteen"
 }
