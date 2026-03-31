@@ -14,10 +14,10 @@ public class LateGamePlusCompat {
 
     public static void setDurabilityAndUnbreakableItems() {
         DefaultItemComponentEvents.MODIFY.register(context -> {
-            Item netheriteBow       = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_bow"));
-            Item netheriteCrossbow  = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_crossbow"));
-            Item netheriteElytra    = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_elytra"));
-            Item netheriteFishingRod= BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_fishing_rod"));
+            Item netheriteBow = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_bow"));
+            Item netheriteCrossbow = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_crossbow"));
+            Item netheriteElytra = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_elytra"));
+            Item netheriteFishingRod = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_fishing_rod"));
             Item netheriteWolfArmor = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_wolf_armor"));
 
             if (!CONFIG.lateGamePlus.unbreakableNetheriteBow()) {
@@ -44,8 +44,8 @@ public class LateGamePlusCompat {
                 context.modify(netheriteFishingRod, components -> components.set(UNBREAKABLE, Unit.INSTANCE));
             }
 
-            if (!CONFIG.lateGamePlus.unbreakableNetheriteWolfArmor2()) {
-                context.modify(netheriteWolfArmor, components -> components.set(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteWolfArmor2()));
+            if (!CONFIG.lateGamePlus.unbreakableNetheriteWolfArmor()) {
+                context.modify(netheriteWolfArmor, components -> components.set(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteWolfArmor()));
             } else {
                 context.modify(netheriteWolfArmor, components -> components.set(UNBREAKABLE, Unit.INSTANCE));
             }
