@@ -1,53 +1,53 @@
 package net.fneifnox.customdurability.compat;
 
 import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Unit;
-import net.minecraft.world.item.Item;
 
 import static net.fneifnox.customdurability.CustomDurability.CONFIG;
-import static net.minecraft.core.component.DataComponents.MAX_DAMAGE;
-import static net.minecraft.core.component.DataComponents.UNBREAKABLE;
+import static net.minecraft.component.DataComponentTypes.MAX_DAMAGE;
+import static net.minecraft.component.DataComponentTypes.UNBREAKABLE;
 
 public class LateGamePlusCompat {
 
     public static void setDurabilityAndUnbreakableItems() {
         DefaultItemComponentEvents.MODIFY.register(context -> {
-            Item netheriteBow = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_bow"));
-            Item netheriteCrossbow = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_crossbow"));
-            Item netheriteElytra = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_elytra"));
-            Item netheriteFishingRod = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_fishing_rod"));
-            Item netheriteWolfArmor = BuiltInRegistries.ITEM.getValue(Identifier.fromNamespaceAndPath("lategameplus", "netherite_wolf_armor"));
+            Item netheriteBow = Registries.ITEM.get(Identifier.of("lategameplus", "netherite_bow"));
+            Item netheriteCrossbow = Registries.ITEM.get(Identifier.of("lategameplus", "netherite_crossbow"));
+            Item netheriteElytra = Registries.ITEM.get(Identifier.of("lategameplus", "netherite_elytra"));
+            Item netheriteFishingRod = Registries.ITEM.get(Identifier.of("lategameplus", "netherite_fishing_rod"));
+            Item netheriteWolfArmor = Registries.ITEM.get(Identifier.of("lategameplus", "netherite_wolf_armor"));
 
             if (!CONFIG.lateGamePlus.unbreakableNetheriteBow()) {
-                context.modify(netheriteBow, components -> components.set(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteBow()));
+                context.modify(netheriteBow, components -> components.add(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteBow()));
             } else {
-                context.modify(netheriteBow, components -> components.set(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(netheriteBow, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.lateGamePlus.unbreakableNetheriteCrossbow()) {
-                context.modify(netheriteCrossbow, components -> components.set(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteCrossbow()));
+                context.modify(netheriteCrossbow, components -> components.add(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteCrossbow()));
             } else {
-                context.modify(netheriteCrossbow, components -> components.set(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(netheriteCrossbow, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.lateGamePlus.unbreakableNetheriteElytra()) {
-                context.modify(netheriteElytra, components -> components.set(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteElytra()));
+                context.modify(netheriteElytra, components -> components.add(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteElytra()));
             } else {
-                context.modify(netheriteElytra, components -> components.set(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(netheriteElytra, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.lateGamePlus.unbreakableNetheriteFishingRod()) {
-                context.modify(netheriteFishingRod, components -> components.set(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteFishingRod()));
+                context.modify(netheriteFishingRod, components -> components.add(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteFishingRod()));
             } else {
-                context.modify(netheriteFishingRod, components -> components.set(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(netheriteFishingRod, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
 
             if (!CONFIG.lateGamePlus.unbreakableNetheriteWolfArmor()) {
-                context.modify(netheriteWolfArmor, components -> components.set(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteWolfArmor()));
+                context.modify(netheriteWolfArmor, components -> components.add(MAX_DAMAGE, CONFIG.lateGamePlus.durabilityForNetheriteWolfArmor()));
             } else {
-                context.modify(netheriteWolfArmor, components -> components.set(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(netheriteWolfArmor, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
             }
         });
     }
