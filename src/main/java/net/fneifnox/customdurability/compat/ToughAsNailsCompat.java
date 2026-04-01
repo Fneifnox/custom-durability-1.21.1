@@ -1,10 +1,10 @@
 package net.fneifnox.customdurability.compat;
 
 import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
+import net.minecraft.component.type.UnbreakableComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Unit;
 
 import static net.fneifnox.customdurability.CustomDurability.CONFIG;
 import static net.minecraft.component.DataComponentTypes.MAX_DAMAGE;
@@ -22,25 +22,25 @@ public class ToughAsNailsCompat {
             if (!CONFIG.toughAsNails.unbreakableLeafHelmet()) {
                 context.modify(leafHelmet, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForLeafHelmet()));
             } else {
-                context.modify(leafHelmet, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(leafHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             if (!CONFIG.toughAsNails.unbreakableLeafChestplate()) {
                 context.modify(leafChestplate, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForLeafChestplate()));
             } else {
-                context.modify(leafChestplate, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(leafChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             if (!CONFIG.toughAsNails.unbreakableLeafLeggings()) {
                 context.modify(leafLeggings, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForLeafLeggings()));
             } else {
-                context.modify(leafLeggings, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(leafLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             if (!CONFIG.toughAsNails.unbreakableLeafBoots()) {
                 context.modify(leafBoots, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForLeafBoots()));
             } else {
-                context.modify(leafBoots, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(leafBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
         });
     }
@@ -55,25 +55,25 @@ public class ToughAsNailsCompat {
             if (!CONFIG.toughAsNails.unbreakableWoolHelmet()) {
                 context.modify(woolHelmet, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForWoolHelmet()));
             } else {
-                context.modify(woolHelmet, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(woolHelmet, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             if (!CONFIG.toughAsNails.unbreakableWoolChestplate()) {
                 context.modify(woolChestplate, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForWoolChestplate()));
             } else {
-                context.modify(woolChestplate, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(woolChestplate, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             if (!CONFIG.toughAsNails.unbreakableWoolLeggings()) {
                 context.modify(woolLeggings, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForWoolLeggings()));
             } else {
-                context.modify(woolLeggings, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(woolLeggings, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             if (!CONFIG.toughAsNails.unbreakableWoolBoots()) {
                 context.modify(woolBoots, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForWoolBoots()));
             } else {
-                context.modify(woolBoots, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(woolBoots, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
         });
     }
@@ -89,9 +89,9 @@ public class ToughAsNailsCompat {
                 context.modify(leatherDirtyCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForLeatherCanteen()));
                 context.modify(leatherPureCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForLeatherCanteen()));
             } else {
-                context.modify(leatherCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(leatherDirtyCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(leatherPureCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(leatherCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(leatherDirtyCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(leatherPureCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             Item copperCanteen = Registries.ITEM.get(Identifier.of("toughasnails", "copper_water_canteen"));
@@ -103,9 +103,9 @@ public class ToughAsNailsCompat {
                 context.modify(copperDirtyCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForCopperCanteen()));
                 context.modify(copperPureCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForCopperCanteen()));
             } else {
-                context.modify(copperCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(copperDirtyCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(copperPureCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(copperCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(copperDirtyCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(copperPureCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             Item ironCanteen = Registries.ITEM.get(Identifier.of("toughasnails", "iron_water_canteen"));
@@ -117,9 +117,9 @@ public class ToughAsNailsCompat {
                 context.modify(ironDirtyCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForIronCanteen()));
                 context.modify(ironPureCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForIronCanteen()));
             } else {
-                context.modify(ironCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(ironDirtyCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(ironPureCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(ironCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(ironDirtyCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(ironPureCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             Item goldCanteen = Registries.ITEM.get(Identifier.of("toughasnails", "gold_water_canteen"));
@@ -131,9 +131,9 @@ public class ToughAsNailsCompat {
                 context.modify(goldDirtyCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForGoldCanteen()));
                 context.modify(goldPureCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForGoldCanteen()));
             } else {
-                context.modify(goldCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(goldDirtyCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(goldPureCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(goldCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(goldDirtyCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(goldPureCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             // diamond
@@ -146,9 +146,9 @@ public class ToughAsNailsCompat {
                 context.modify(diamondDirtyCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForDiamondCanteen()));
                 context.modify(diamondPureCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForDiamondCanteen()));
             } else {
-                context.modify(diamondCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(diamondDirtyCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(diamondPureCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(diamondCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(diamondDirtyCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(diamondPureCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
 
             // netherite
@@ -161,9 +161,9 @@ public class ToughAsNailsCompat {
                 context.modify(netheriteDirtyCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForNetheriteCanteen()));
                 context.modify(netheritePureCanteen, components -> components.add(MAX_DAMAGE, CONFIG.toughAsNails.durabilityForNetheriteCanteen()));
             } else {
-                context.modify(netheriteCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(netheriteDirtyCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
-                context.modify(netheritePureCanteen, components -> components.add(UNBREAKABLE, Unit.INSTANCE));
+                context.modify(netheriteCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(netheriteDirtyCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
+                context.modify(netheritePureCanteen, components -> components.add(UNBREAKABLE, new UnbreakableComponent((true))));
             }
         });
     }
